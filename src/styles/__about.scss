@@ -1,0 +1,65 @@
+#aboutsec{
+    background-color:  #f5f5f5;
+    min-height: 745px;
+    text-align: center;
+    padding-top: 30px;
+    h1{
+        padding-top: 62px;
+        font-family: $poppin;
+        color:#333333;
+        font-size: 40px;
+        font-weight: 400;
+        @include respond_to (spacing){
+            font-size: 35px;
+            padding-top: 62px;
+		}
+        @include respond_to (small){
+            font-size: 30px;
+            padding-top: 42px;
+		}
+    }
+    .dash{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        background-color:#cccccc;
+        width: 50px;
+        height: 2px;
+        margin: 25px 0 25px 0;
+    }
+    img{
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 75px;
+        @include respond_to (spacing){
+            margin-bottom: 55px;
+        }
+        @include respond_to (small){
+            margin-bottom: 35px;
+		}
+    }
+    p{
+        text-align: justify;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        max-width: 980px;
+        font-family: $lato;
+        color: #666666;
+        font-size: 21px;
+        line-height: 40px; 
+        letter-spacing: 2px;
+        padding: 0 5%;
+        @include respond_to (spacing){
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        @include respond_to (small){
+            font-size: 14px;
+		}
+    }
+}
+
+
