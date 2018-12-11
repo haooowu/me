@@ -454,6 +454,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 25px 0 75px 0; }
   #skillsec .skilllist {
     display: flex;
+    padding: 0;
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -536,6 +537,7 @@ section.sidenav nav {
       @media only screen and (max-width: 789px) {
         section.sidenav nav ul li {
           height: auto;
+          width: auto;
           color: #ffffff; } }
   section.sidenav nav a.dot {
     display: inline-block;
@@ -550,6 +552,7 @@ section.sidenav nav {
     @media only screen and (max-width: 789px) {
       section.sidenav nav a.dot {
         color: transparent;
+        width: auto;
         border-radius: 0;
         border: none;
         margin: 0;
@@ -595,9 +598,11 @@ section.sidenav nav {
     text-align: right; }
     @media only screen and (max-width: 789px) {
       section.sidenav nav p {
-        top: 50%;
-        transform: translate(50%, -50%);
-        height: auto; } }
+        position: initial;
+        float: none;
+        width: auto;
+        height: auto;
+        right: 0; } }
     section.sidenav nav p span {
       font-family: "Montserrat", sans-serif;
       font-size: 13px;
