@@ -55,6 +55,7 @@ section.sidenav {
 				height: 29px;
 				@include respond_to (spacing){//for safari
 					height: auto;
+					width: auto;
 					color: #ffffff;
 				}
 			}
@@ -71,6 +72,7 @@ section.sidenav {
 			height: 10px;
 			@include respond_to (spacing){
 				color: transparent;
+				width: auto;
 				border-radius: 0;
 				border: none;
 				margin: 0;
@@ -129,9 +131,11 @@ section.sidenav {
 			z-index: 9;
 			text-align: right;
 			@include respond_to (spacing){
-				top: 50%;
-				transform: translate(50%,-50%);
+				position: initial;
+				float: none;
+				width: auto;
 				height: auto;
+				right: 0;
 			}
 			span{
 				font-family: $mont;
