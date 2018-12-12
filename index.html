@@ -14,14 +14,24 @@
 <body>
 	<div id="app">
 		<header>
-			<section class="sidenav">
+			<section class="sidenav" id="sidenav">
 				<nav>
 					<ul>
-						<li><a href="#" v-scroll-to="'#main'" class="dot" :class="{'actived': navFlag.main}"><p><span>Home</span></P></a></li>
-						<li><a href="#" v-scroll-to="'#about'" class="dot" :class="{'actived': navFlag.about}"><p><span>About</span></p></a></li>
-						<li><a href="#" v-scroll-to="'#skill'" class="dot" :class="{'actived': navFlag.skill}"><p><span>Skill</span></p></a></li>
-						<li><a href="#" v-scroll-to="'#work'" class="dot" :class="{'actived': navFlag.work}"><p><span>Work</span></p></a></li>
-						<li><a href="#" v-scroll-to="'#contact'" class="dot" :class="{'actived': navFlag.contact}"><p><span>Contact</span></p></a></li>
+						<li><a href="#"v-scroll-to="'#main'" class="dot" :class="{'actived': navFlag.main}">
+							<p><span>Home</span></P>
+						</a></li>
+						<li><a href="#" v-scroll-to="'#about'" class="dot" :class="{'actived': navFlag.about}">
+							<p><span>About</span></p>
+						</a></li>
+						<li><a href="#" v-scroll-to="'#skill'" class="dot" :class="{'actived': navFlag.skill}">
+							<p><span>Skill</span></p>
+						</a></li>
+						<li><a href="#" v-scroll-to="'#work'" class="dot" :class="{'actived': navFlag.work}">
+							<p><span>Work</span></p>
+						</a></li>
+						<li><a href="#" v-scroll-to="'#contact'" class="dot" :class="{'actived': navFlag.contact}">
+							<p><span>Contact</span></p>
+						</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -61,8 +71,7 @@
 					<h1 id="about">ABOUT</h1>
 					<div class="dash"></div>
 					<p>
-						&emsp;&emsp;&emsp;&nbsp;Hi! I'm Hao, a web developer based in Toronto, Canada. After completing my computer science degree I realized my interest in 
-						front-end development.
+						&emsp;&emsp;&emsp;&nbsp;Hi! I'm Hao, a web developer based in Toronto, Canada.
 						I am passionate about creating interactive and responsive website with UX in mind. I enjoy building applications that are accessible while providing rich content to users. 
 						When I'm not coding, my favourite pass times are learning new technology, playing video games, or hanging out with my friends.
 					</p>

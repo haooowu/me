@@ -85,22 +85,6 @@ section.sidenav {
 					color: white;
 				}
 			}
-			&:hover{
-				p{
-					background-color:  rgba(0, 0, 0, 0.9);
-					span{
-						color: #ffffff;
-					}
-				}
-				@include respond_to (spacing){
-					p{
-						background-color: transparent;
-						span{
-							color: #2c6ed5;
-						}
-					}
-				}
-			}
 		}
 		a.actived {
 			border: 2px solid #2c6ed5;
@@ -145,13 +129,34 @@ section.sidenav {
 				left: 50%;
 				transform: translate(-50%,-55%);
 				@include respond_to (spacing){
+					font-size: 14px;
+					font-weight: bold;
 					position: relative;
 					top: 0;
 					left: 0;
 				}
 			}
-		}//end of p
-	}//end of nav
+		}
+	}
+}
+
+section.no-touch{
+	a.dot:hover{
+		p{
+			background-color:  rgba(0, 0, 0, 0.9);
+			span{
+				color: #ffffff;
+			}
+		}
+		@include respond_to (spacing){
+			p{
+				background-color: transparent;
+				span{
+					color: #2c6ed5;
+				}
+			}
+		}
+	}
 }
 
 #main{
@@ -252,7 +257,6 @@ section.sidenav {
 
 footer{
 	background-color: rgba(20,20,20,1);
-	/* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
 	height: 143px;
 	.contactlist{
 		padding-top: 12px;

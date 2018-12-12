@@ -41,6 +41,11 @@ const app = new Vue({
 			contact: false
 		}
 	}),
+	created() {
+		if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
+			document.getElementById('sidenav').classList.add('no-touch')
+		}
+	},
     mounted () {
 		window.addEventListener('scroll', this.handleScroll)
 	},

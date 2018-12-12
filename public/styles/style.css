@@ -563,15 +563,6 @@ section.sidenav nav {
         background: none; }
         section.sidenav nav a.dot p {
           color: white; } }
-    section.sidenav nav a.dot:hover p {
-      background-color: rgba(0, 0, 0, 0.9); }
-      section.sidenav nav a.dot:hover p span {
-        color: #ffffff; }
-    @media only screen and (max-width: 789px) {
-      section.sidenav nav a.dot:hover p {
-        background-color: transparent; }
-        section.sidenav nav a.dot:hover p span {
-          color: #2c6ed5; } }
   section.sidenav nav a.actived {
     border: 2px solid #2c6ed5; }
     @media only screen and (max-width: 789px) {
@@ -612,9 +603,22 @@ section.sidenav nav {
       transform: translate(-50%, -55%); }
       @media only screen and (max-width: 789px) {
         section.sidenav nav p span {
+          font-size: 14px;
+          font-weight: bold;
           position: relative;
           top: 0;
           left: 0; } }
+
+section.no-touch a.dot:hover p {
+  background-color: rgba(0, 0, 0, 0.9); }
+  section.no-touch a.dot:hover p span {
+    color: #ffffff; }
+
+@media only screen and (max-width: 789px) {
+  section.no-touch a.dot:hover p {
+    background-color: transparent; }
+    section.no-touch a.dot:hover p span {
+      color: #2c6ed5; } }
 
 #main {
   background-color: rgba(0, 0, 0, 0.7);
@@ -705,7 +709,6 @@ section.sidenav nav {
 
 footer {
   background-color: #141414;
-  /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
   height: 143px; }
   footer .contactlist {
     padding-top: 12px; }
