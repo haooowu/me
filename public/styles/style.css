@@ -378,7 +378,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           #worksec #showcases .project div.description div.wrap .tags {
             color: #71A9F1;
             margin-bottom: 30px;
-            font-size: 16px;
+            font-size: 24px;
             font-family: "Lato", sans-serif; }
             @media only screen and (max-width: 1028px) {
               #worksec #showcases .project div.description div.wrap .tags {
@@ -475,6 +475,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       color: black;
       margin-top: 5px;
       margin-bottom: 25px; }
+
+.firebase_icon {
+  width: 24px;
+  height: 24px;
+  transform: translateY(1px); }
 
 footer {
   text-align: center; }
@@ -719,7 +724,7 @@ button {
   z-index: 9;
   transition: 0.2s; }
   button:hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2); }
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2) !important; }
   button:focus {
     outline: none; }
   button:active {
