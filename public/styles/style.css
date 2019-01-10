@@ -135,7 +135,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 #aboutsec {
   background-color: #f5f5f5;
-  min-height: 745px;
+  min-height: 645px;
   text-align: center;
   padding-top: 30px; }
   #aboutsec h1 {
@@ -191,6 +191,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     @media only screen and (max-width: 480px) {
       #aboutsec p {
         font-size: 14px; } }
+  #aboutsec button {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background-color: #2c6ed5;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 185px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center; }
 
 #contactsec {
   background-color: #f5f5f5;
@@ -375,14 +388,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
               #worksec #showcases .project div.description div.wrap .title {
                 text-align: center;
                 padding-top: 15px; } }
-          #worksec #showcases .project div.description div.wrap .tags {
+          #worksec #showcases .project div.description div.wrap .tags, #worksec #showcases .project div.description div.wrap .apitext {
             color: #71A9F1;
-            margin-bottom: 30px;
-            font-size: 24px;
             font-family: "Lato", sans-serif; }
             @media only screen and (max-width: 1028px) {
-              #worksec #showcases .project div.description div.wrap .tags {
+              #worksec #showcases .project div.description div.wrap .tags, #worksec #showcases .project div.description div.wrap .apitext {
                 text-align: center; } }
+          #worksec #showcases .project div.description div.wrap .tags {
+            margin-bottom: 20px;
+            font-size: 24px; }
+          #worksec #showcases .project div.description div.wrap .apitext {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 10px; }
           #worksec #showcases .project div.description div.wrap .viewmore {
             display: flex;
             justify-content: space-between;
