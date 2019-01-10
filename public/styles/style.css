@@ -388,14 +388,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
               #worksec #showcases .project div.description div.wrap .title {
                 text-align: center;
                 padding-top: 15px; } }
-          #worksec #showcases .project div.description div.wrap .tags {
+          #worksec #showcases .project div.description div.wrap .tags, #worksec #showcases .project div.description div.wrap .apitext {
             color: #71A9F1;
-            margin-bottom: 30px;
-            font-size: 24px;
             font-family: "Lato", sans-serif; }
             @media only screen and (max-width: 1028px) {
-              #worksec #showcases .project div.description div.wrap .tags {
+              #worksec #showcases .project div.description div.wrap .tags, #worksec #showcases .project div.description div.wrap .apitext {
                 text-align: center; } }
+          #worksec #showcases .project div.description div.wrap .tags {
+            margin-bottom: 20px;
+            font-size: 24px; }
+          #worksec #showcases .project div.description div.wrap .apitext {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 10px; }
           #worksec #showcases .project div.description div.wrap .viewmore {
             display: flex;
             justify-content: space-between;

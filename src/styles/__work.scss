@@ -121,14 +121,21 @@
                             padding-top: 15px;
                         }
                     }
-                    .tags{
+                    .tags, .apitext{
                         color:#71A9F1;
-                        margin-bottom: 30px;
-                        font-size: 24px;
                         font-family: $lato;
                         @include respond_to (large){
                             text-align: center;
                         }
+                    }
+                    .tags{
+                        margin-bottom: 20px;
+                        font-size: 24px;
+                    }
+                    .apitext{
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        margin-bottom: 10px;
                     }
                     .viewmore{
                         display: flex;
