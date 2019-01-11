@@ -17,7 +17,7 @@
 			<section class="sidenav" id="sidenav">
 				<nav>
 					<ul>
-						<li><a href="#"v-scroll-to="'#main'" class="dot" :class="{'actived': navFlag.main}">
+						<li><a href="#" v-scroll-to="'#main'" class="dot" :class="{'actived': navFlag.main}">
 							<p><span>Home</span></P>
 						</a></li>
 						<li><a href="#" v-scroll-to="'#about'" class="dot" :class="{'actived': navFlag.about}">
@@ -38,7 +38,9 @@
 			<section id="main">
 				<img id="logo" src="./public/images/logo.png" alt="">
 				<a href="#" v-scroll-to="'#work'" id="mywork">my work</a>
-				<div id="godown"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></div>
+				<div id="godown" v-scroll-to="'#about'">
+					<i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+				</div>
 				<div class="wrapper">
 					<div class="intro">
 						<h1>Hello, My name is Hao Wu</h1>
@@ -76,7 +78,7 @@
 						bringing efficient and scalable solutions.
 						When I'm not coding, my favourite pass times are learning new technology, playing video games, or hanging out with my friends.
 					</p>
-					<button>my resume</button>
+					<button onclick="window.open('https://drive.google.com/open?id=1T4nUq1EN8eLFR_Ibgg-RPi1f7_aK10wP')">my resume</button>
 				</div>
 			</section>
 			<section id="skillsec">
