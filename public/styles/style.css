@@ -683,6 +683,7 @@ section.no-touch a.dot:hover p {
       #main #logo {
         display: none; } }
   #main #godown {
+    cursor: pointer;
     padding: 10px;
     color: #ffffff;
     position: absolute;
