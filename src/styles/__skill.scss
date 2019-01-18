@@ -37,10 +37,11 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
         li{
-            flex: 1 0 33.3%;
+            flex: 1 0 24.9%;
             text-align: center;
-            @include respond_to (small){
+            @include respond_to (medium){
                 flex: 1 0 49.9%;
             }
         }

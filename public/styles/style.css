@@ -480,11 +480,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 50px; }
     #skillsec .skilllist li {
-      flex: 1 0 33.3%;
+      flex: 1 0 24.9%;
       text-align: center; }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 768px) {
         #skillsec .skilllist li {
           flex: 1 0 49.9%; } }
     #skillsec .skilllist img, #skillsec .skilllist i {
