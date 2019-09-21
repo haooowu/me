@@ -523,7 +523,9 @@ li, a {
 
 .wrapper {
   max-width: 1180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 10px; }
 
 header {
   background-image: url("../../public/images/hero.jpeg");
