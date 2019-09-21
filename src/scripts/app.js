@@ -31,7 +31,7 @@ function navController () {
 }
 
 const app = new Vue({
-    el: '#app',
+  el: '#app',
 	data: () => ({
 		navFlag: {
 			main: true,
@@ -46,13 +46,13 @@ const app = new Vue({
 			document.getElementById('sidenav').classList.add('no-touch')
 		}
 	},
-    mounted () {
+  mounted () {
 		window.addEventListener('scroll', this.handleScroll)
 	},
 	beforeDestroy () {
 		window.removeEventListener('scroll', this.handleScroll)
 	},
-    methods: {
-        handleScroll: debounce(navController, 20)
-    }
+	methods: {
+		handleScroll: debounce(navController, 20)
+	}
 })
