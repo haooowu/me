@@ -53,6 +53,6 @@ const app = new Vue({
 		window.removeEventListener('scroll', this.handleScroll)
 	},
 	methods: {
-		handleScroll: debounce(navController, 20)
+		handleScroll: debounce(navController, 30)
 	}
 })
