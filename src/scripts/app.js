@@ -10,18 +10,18 @@ function debounce (func, delay) {
 
 function isSectionInView (element) {
 	const rect = element.getBoundingClientRect()
-    if (element === document.getElementById('contactsec')) {
+  if (element === document.getElementById('contactsec')) {
 		const offset = document.documentElement.scrollTop + window.innerHeight
 		const height = document.documentElement.offsetHeight - 140 // footer height
 		if (offset >= height) return true
 		return rect.bottom < 955 // contac section height
 	}
-    return (
-        (rect.top <= -10 && rect.bottom > 0) || (rect.top <= 0 && rect.bottom > 0)
-    )
+	return (
+		(rect.top <= -10 && rect.bottom > 0) || (rect.top <= 0 && rect.bottom > 0)
+	)
 }
 
-function navController () {
+function navController() {
 	this.navFlag.main = isSectionInView(document.getElementById('main'))
 	this.navFlag.about = isSectionInView(document.getElementById('aboutsec'))
 	this.navFlag.skill = isSectionInView(document.getElementById('skillsec'))
