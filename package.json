@@ -1,5 +1,5 @@
 {
-  "name": "me-gulp-dev",
+  "name": "me-personal-site",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -9,15 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.0.1",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "babelify": "^10.0.0",
-    "browser-sync": "^2.26.7",
-    "browserify": "^16.2.3",
+    "browser-sync": "^2.26.13",
+    "browserify": "^16.5.2",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }
