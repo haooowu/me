@@ -4,6 +4,8 @@
   "description": "personal site",
   "main": "gulpfile.js",
   "scripts": {
+    "pre-commit": "lint-staged",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hao Wu",
@@ -26,11 +28,6 @@
     "prettier": "2.3.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{js,ts,md,html,css,scss}": "prettier --write"
