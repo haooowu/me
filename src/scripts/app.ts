@@ -1,4 +1,4 @@
-function debounce(func, delay) {
+function debounce(func: Function, delay: number) {
   let flag = false;
   return function () {
     if (flag) return;
@@ -10,15 +10,13 @@ function debounce(func, delay) {
   };
 }
 
-var test = 'test';
-
-function isSectionInView(element) {
+function isSectionInView(element: HTMLElement) {
   const rect = element.getBoundingClientRect();
   if (element === document.getElementById('contactsec')) {
     const offset = document.documentElement.scrollTop + window.innerHeight;
     const height = document.documentElement.offsetHeight - 140; // footer height
     if (offset >= height) return true;
-    return rect.bottom < 955; // contac section height
+    return rect.bottom < 955; // contact section height
   }
   return (rect.top <= -10 && rect.bottom > 0) || (rect.top <= 0 && rect.bottom > 0);
 }
@@ -32,6 +30,7 @@ function navController() {
   if (this.navFlag.contact) this.navFlag.work = false;
 }
 
+// @ts-ignore
 const app = new Vue({
   el: '#app',
   data: () => ({
