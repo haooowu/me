@@ -1,360 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Hao Wu</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins" rel="stylesheet">
-	<link rel="icon" type="image/png" href="public/images/fav.png">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="public/styles/style.css">
-</head>
-<body>
-	<div id="app">
-		<header>
-			<section class="sidenav" id="sidenav">
-				<nav>
-					<ul>
-						<li><a href="#" v-scroll-to="'#main'" class="dot" :class="{'actived': navFlag.main}">
-							<p><span>Home</span></P>
-						</a></li>
-						<li><a href="#" v-scroll-to="'#about'" class="dot" :class="{'actived': navFlag.about}">
-							<p><span>About</span></p>
-						</a></li>
-						<li><a href="#" v-scroll-to="'#skill'" class="dot" :class="{'actived': navFlag.skill}">
-							<p><span>Skill</span></p>
-						</a></li>
-						<li><a href="#" v-scroll-to="'#work'" class="dot" :class="{'actived': navFlag.work}">
-							<p><span>Work</span></p>
-						</a></li>
-						<li><a href="#" v-scroll-to="'#contact'" class="dot" :class="{'actived': navFlag.contact}">
-							<p><span>Contact</span></p>
-						</a></li>
-					</ul>
-				</nav>
-			</section>
-			<section id="main">
-				<img id="logo" src="./public/images/logo.png" alt="">
-				<a href="#" v-scroll-to="'#work'" id="mywork">my work</a>
-				<div id="godown" v-scroll-to="'#about'">
-					<i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
-				</div>
-				<div class="wrapper">
-					<div class="intro">
-						<h1>Hello, My name is Hao Wu</h1>
-						<p>Software Developer</p>
-						<div class="contactlist">
-							<a href="https://twitter.com/HaoooWu"><span class="fa-stack fa">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-							</span></a>
-							<a href="https://www.linkedin.com/in/hao-wu-b70b845b/"><span class="fa-stack fa">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-							</span></a>
-							<a href="https://github.com/haooowu"><span class="fa-stack fa">
-									<i class="fa fa-circle-thin fa-stack-2x"></i>
-									<i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-								</span></a>
-							<a href="mailto:haooo.wu@gmail.com"><span class="fa-stack fa">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-							</span></a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</header>
-		<main>
-			<section id="aboutsec">
-				<div class="wrapper">
-					<h1 id="about">ABOUT</h1>
-					<div class="dash"></div>
-					<p>
-						&emsp;&emsp;&emsp;&nbsp;Hi there! I'm Hao, a software developer based in Toronto, Canada.
-						I am passionate about front-end development and user experience.
-						I enjoy building applications that are accessible while providing efficient and scalable solutions to users.
-						When I'm not coding, my favourite pass times are learning new technology, playing video games, or hanging out with my friends.
-					</p>
-					<button onclick="window.open('https://drive.google.com/open?id=10C6MKqF1tV06LR7JsqgaIa8AqtGexRGv')">
-						my resume
-					</button>
-				</div>
-			</section>
-			<section id="skillsec">
-				<div class="wrapper">
-					<h1 id="skill">SKILLS & TOOLS</h1>
-					<div class="dash"></div>
-					<ul class="skilllist">
-						<li>
-							<i class="devicon-html5-plain colored"></i>
-							<p>HTML5</p>
-						</li>
-						<li>
-							<i class="devicon-css3-plain colored"></i>
-							<p>CSS3</p>
-						</li>
-						<li>
-							<i class="devicon-javascript-plain colored"></i>
-							<p>JavaScript</p>
-						</li>
-						<li>
-							<i class="devicon-react-original colored"></i>
-							<p>React</p>
-						</li>
-						<li>
-							<i class="devicon-vuejs-plain colored"></i>
-							<p>Vue</p>
-						</li>
-						<li>
-							<i class="devicon-sass-original colored"></i>
-							<p>SASS</p>
-						</li>
-						<li>
-							<i class="devicon-jquery-plain colored"></i>
-							<p>jQuery</p>
-						</li>
-						<li>
-							<i class="devicon-git-plain colored"></i>
-							<p>Git</p>
-						</li>
-						<li>
-							<i class="devicon-nodejs-plain"></i>
-							<p>Node</p>
-						</li>
-						<li>
-							<i class="devicon-bootstrap-plain"></i>
-							<p>Bootstrap</p>
-						</li>
-						<li>
-							<i class="devicon-webpack-plain"></i>
-							<p>Webpack</p>
-						</li>
-						<li>
-							<i class="devicon-gulp-plain"></i>
-							<p>Gulp</p>
-						</li>
-						<li>
-							<i class="devicon-python-plain colored"></i>
-							<p>Python</p>
-						</li>
-						<li id="fb">
-							<img src="./public/images/firebase_def.svg" alt="firebase icon">
-							<p>Firebase</p>
-						</li>
-						<li>
-							<i class="devicon-java-plain colored"></i>
-							<p>Java</p>
-						</li>
-						<li>
-							<i class="devicon-android-plain colored"></i>
-							<p>Andriod</p>
-						</li>
-					</ul>	
-				</div>
-			</section>
-			<section id="worksec">
-				<div class="wrapper">	
-					<h1 id="work">PERSONAL WORKS</h1>
-					<div class="dash"></div>
-					<div id="showcases">
-						<div class="project">
-							<div class="imgholder">
-								<img src="./public/images/react.png" alt="">
-							</div>
-							<div class="description">
-								<div class="wrap">
-									<p class="title">React Application</p>
-									<span class="divide"></span>
-									<p class="apitext">
-										built with: 
-									</p>
-									<div class="tags">
-										<i title="React.js" class="devicon-react-original colored"></i>
-										<i title="JavaScript" class="devicon-javascript-plain colored"></i>
-										<i title="HTML5" class="devicon-html5-plain colored"></i>
-										<i title="CSS3" class="devicon-css3-plain colored"></i>
-										<img title="Firebase" src="./public/images/firebase_def.svg" alt="firebase icon"  class="firebase_icon"/>
-										<i title="Gulp" class="devicon-gulp-plain colored"></i>
-										<i title="SASS" class="devicon-sass-original colored"></i>
-									</div>
-									<p>
-										An eventbrite viewer built with React and firebase. Each event has its own chat room, user can login from their google account and 
-										chat with other people for specific events, or view their chat history and message count.
-									</p>
-									<div class="viewmore">
-										<a href="https://project-6-cb9b9.firebaseapp.com/">
-											<button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-										</a>
-										<a href="https://github.com/haooowu/EventChat">
-											<button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="project">
-							<div class="imgholder">
-								<img src="./public/images/translator.png" alt="">
-							</div>
-							<div class="description">
-								<div class="wrap">
-									<p class="title">JavaScript API Application</p>
-									<span class="divide"></span>
-									<p class="apitext">
-										built with: 
-									</p>
-									<div class="tags">
-										<i title="JavaScript" class="devicon-javascript-plain colored"></i>
-										<i title="HTML5" class="devicon-html5-plain colored"></i>
-										<i title="CSS3" class="devicon-css3-plain colored"></i>
-										<i title="Gulp" class="devicon-gulp-plain colored"></i>
-										<i title="SASS" class="devicon-sass-original colored"></i>
-									</div>
-									<p>An online translator that utilizes both Yandex and Wikipedia APIs to provide users both a language translation and information on the topic from wikipedia.</p>
-									<div class="viewmore">
-										<a href="https://haooowu.github.io/TranslateNwiki/">
-											<button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-										</a>
-										<a href="https://github.com/haooowu/TranslateNwiki">
-											<button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="project">
-							<div class="imgholder">
-								<img src="./public/images/emoji.png" alt="">
-							</div>
-							<div class="description">
-								<div class="wrap">
-									<p class="title">jQuery Application</p>
-									<span class="divide"></span>
-									<p class="apitext">
-										built with: 
-									</p>	
-									<div class="tags">
-										<i title="JavaScript" class="devicon-javascript-plain colored"></i>
-										<i title="jQuery" class="devicon-jquery-plain colored"></i>
-										<i title="HTML5" class="devicon-html5-plain colored"></i>
-										<i title="CSS3" class="devicon-css3-plain colored"></i>
-									</div>
-									<p>A memory game composed with popular emoji faces, which incorporates the dynamic use of classes.</p>
-									<div class="viewmore">
-										<a href="https://haooowu.github.io/emojimatchgame/">
-											<button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-										</a>
-										<a href="https://github.com/haooowu/emojimatchgame">
-											<button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="project">
-							<div class="imgholder">
-								<img src="./public/images/psd.png"  alt="">
-							</div>
-							<div class="description">
-								<div class="wrap">
-									<p class="title">PSD Conversion to Responsive Design</p>
-									<span class="divide"></span>
-									<p class="apitext">
-										built with: 
-									</p>
-									<div class="tags">
-										<i title="HTML5" class="devicon-html5-plain colored"></i>
-										<i title="CSS3" class="devicon-css3-plain colored"></i>
-										<i title="SASS" class="devicon-sass-original colored"></i>
-									</div>
-									<p>Converting an eye catching psd template into a fully responsive single page website.</p>
-									<div class="viewmore">
-										<a href="https://haooowu.github.io/StartupZ/">
-											<button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-										<a href="https://github.com/haooowu/StartupZ">
-											<button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="project">
-							<div class="imgholder">
-								<img src="./public/images/andriod1.png" alt="">
-								<img src="./public/images/andriod2.png" alt="">
-							</div>
-							<div class="description">
-								<div class="wrap">
-									<p class="title">Andriod App</p>
-									<span class="divide"></span>
-									<p class="apitext">
-										built with: 
-									</p>
-									<div class="tags">
-										<i title="Java"class="devicon-java-plain colored"></i>
-										<i title="Andriod" class="devicon-android-plain colored"></i>
-										<img title="Firebase" src="./public/images/firebase_def.svg" alt="firebase icon"  class="firebase_icon"/>
-										<i title="Git" class="devicon-git-plain colored"></i>
-									</div>
-									<p>An app called Campfire which allow UofT student to create, join, plan, chat, and monitor events and study groups.</p>
-									<div class="viewmore">
-										<a href="https://apkpure.com/campfire/com.vaperinc.campfire"><button>View APK</button></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="contactsec">
-				<div class="wrapper">
-					<h1 id="contact">CONTACT ME</h1>
-					<div class="dash"></div>
-					<p>Email: haooo.wu@gmail.com</p>
-					<form action="https://formspree.io/haooo.wu@gmail.com" method="POST">
-						<p>NAME<span>*</span></p>
-						<input type="text" name="name" required>
-						<p>E-MAIL<span>*</span></p>
-						<input name="email" type="email" required>
-						<p>SUBJECT<span>*</span></p>
-						<input name="subject" type="text" required>
-						<p>MESSAGE<span>*</span></p>
-						<textarea name="message" cols="30" rows="10" required></textarea>
-						<button value="Send">submit</button>
-					</form>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div class="wrapper">
-				<p>Email: haooo.wu@gmail.com</p>
-				<div class="contactlist">
-					<a href="https://twitter.com/HaoooWu"><span class="fa-stack fa">
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-						<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-					</span></a>
-					<a href="https://www.linkedin.com/in/hao-wu-b70b845b/"><span class="fa-stack fa">
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-					</span></a>
-					<a href="https://github.com/haooowu"><span class="fa-stack fa">
-							<i class="fa fa-circle-thin fa-stack-2x"></i>
-							<i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-					</span></a>
-					<a href="mailto:haooo.wu@gmail.com"><span class="fa-stack fa">
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-						<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-					</span></a>
-				</div>
-				<p>© Hao Wu 2019</p>
-			</div>
-		</footer>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
-	<script src="public/scripts/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hao Wu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="public/images/fav.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link rel="stylesheet" href="public/styles/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <section class="sidenav" id="sidenav">
+          <nav>
+            <ul>
+              <li>
+                <a href="#" v-scroll-to="'#main'" class="dot" :class="{'actived': navFlag.main}">
+                  <p><span>Home</span></p>
+                </a>
+              </li>
+              <li>
+                <a href="#" v-scroll-to="'#about'" class="dot" :class="{'actived': navFlag.about}">
+                  <p><span>About</span></p>
+                </a>
+              </li>
+              <li>
+                <a href="#" v-scroll-to="'#skill'" class="dot" :class="{'actived': navFlag.skill}">
+                  <p><span>Skill</span></p>
+                </a>
+              </li>
+              <li>
+                <a href="#" v-scroll-to="'#work'" class="dot" :class="{'actived': navFlag.work}">
+                  <p><span>Work</span></p>
+                </a>
+              </li>
+              <li>
+                <a href="#" v-scroll-to="'#contact'" class="dot" :class="{'actived': navFlag.contact}">
+                  <p><span>Contact</span></p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section id="main">
+          <img id="logo" src="./public/images/logo.png" alt="" />
+          <a href="#" v-scroll-to="'#work'" id="mywork">my work</a>
+          <div id="godown" v-scroll-to="'#about'">
+            <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="wrapper">
+            <div class="intro">
+              <h1>Hello, My name is Hao Wu</h1>
+              <p>Software Developer</p>
+              <div class="contactlist">
+                <a href="https://twitter.com/HaoooWu"
+                  ><span class="fa-stack fa">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span
+                ></a>
+                <a href="https://www.linkedin.com/in/hao-wu-b70b845b/"
+                  ><span class="fa-stack fa">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span
+                ></a>
+                <a href="https://github.com/haooowu"
+                  ><span class="fa-stack fa">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i> </span
+                ></a>
+                <a href="mailto:haooo.wu@gmail.com"
+                  ><span class="fa-stack fa">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> </span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <main>
+        <section id="aboutsec">
+          <div class="wrapper">
+            <h1 id="about">ABOUT</h1>
+            <div class="dash"></div>
+            <p>
+              &emsp;&emsp;&emsp;&nbsp;Hi there! I'm Hao, a software developer based in Toronto, Canada. I am passionate
+              about front-end development and user experience. I enjoy building applications that are accessible while
+              providing efficient and scalable solutions to users. When I'm not coding, my favourite pass times are
+              learning new technology, playing video games, or hanging out with my friends.
+            </p>
+            <button onclick="window.open('https://drive.google.com/open?id=10C6MKqF1tV06LR7JsqgaIa8AqtGexRGv')">
+              my resume
+            </button>
+          </div>
+        </section>
+        <section id="skillsec">
+          <div class="wrapper">
+            <h1 id="skill">SKILLS & TOOLS</h1>
+            <div class="dash"></div>
+            <ul class="skilllist">
+              <li>
+                <i class="devicon-html5-plain colored"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i class="devicon-react-original colored"></i>
+                <p>React</p>
+              </li>
+              <li>
+                <i class="devicon-vuejs-plain colored"></i>
+                <p>Vue</p>
+              </li>
+              <li>
+                <i class="devicon-sass-original colored"></i>
+                <p>SASS</p>
+              </li>
+              <li>
+                <i class="devicon-jquery-plain colored"></i>
+                <p>jQuery</p>
+              </li>
+              <li>
+                <i class="devicon-git-plain colored"></i>
+                <p>Git</p>
+              </li>
+              <li>
+                <i class="devicon-nodejs-plain"></i>
+                <p>Node</p>
+              </li>
+              <li>
+                <i class="devicon-bootstrap-plain"></i>
+                <p>Bootstrap</p>
+              </li>
+              <li>
+                <i class="devicon-webpack-plain"></i>
+                <p>Webpack</p>
+              </li>
+              <li>
+                <i class="devicon-gulp-plain"></i>
+                <p>Gulp</p>
+              </li>
+              <li>
+                <i class="devicon-python-plain colored"></i>
+                <p>Python</p>
+              </li>
+              <li id="fb">
+                <img src="./public/images/firebase_def.svg" alt="firebase icon" />
+                <p>Firebase</p>
+              </li>
+              <li>
+                <i class="devicon-java-plain colored"></i>
+                <p>Java</p>
+              </li>
+              <li>
+                <i class="devicon-android-plain colored"></i>
+                <p>Android</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="worksec">
+          <div class="wrapper">
+            <h1 id="work">PERSONAL WORKS</h1>
+            <div class="dash"></div>
+            <div id="showcases">
+              <div class="project">
+                <div class="imgholder">
+                  <img src="./public/images/react.png" alt="" />
+                </div>
+                <div class="description">
+                  <div class="wrap">
+                    <p class="title">React Application</p>
+                    <span class="divide"></span>
+                    <p class="apitext">built with:</p>
+                    <div class="tags">
+                      <i title="React.js" class="devicon-react-original colored"></i>
+                      <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                      <i title="HTML5" class="devicon-html5-plain colored"></i>
+                      <i title="CSS3" class="devicon-css3-plain colored"></i>
+                      <img
+                        title="Firebase"
+                        src="./public/images/firebase_def.svg"
+                        alt="firebase icon"
+                        class="firebase_icon"
+                      />
+                      <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                      <i title="SASS" class="devicon-sass-original colored"></i>
+                    </div>
+                    <p>
+                      An eventbrite viewer built with React and firebase. Each event has its own chat room, user can
+                      login from their google account and chat with other people for specific events, or view their chat
+                      history and message count.
+                    </p>
+                    <div class="viewmore">
+                      <a href="https://project-6-cb9b9.firebaseapp.com/">
+                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                      </a>
+                      <a href="https://github.com/haooowu/EventChat">
+                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="imgholder">
+                  <img src="./public/images/translator.png" alt="" />
+                </div>
+                <div class="description">
+                  <div class="wrap">
+                    <p class="title">JavaScript API Application</p>
+                    <span class="divide"></span>
+                    <p class="apitext">built with:</p>
+                    <div class="tags">
+                      <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                      <i title="HTML5" class="devicon-html5-plain colored"></i>
+                      <i title="CSS3" class="devicon-css3-plain colored"></i>
+                      <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                      <i title="SASS" class="devicon-sass-original colored"></i>
+                    </div>
+                    <p>
+                      An online translator that utilizes both Yandex and Wikipedia APIs to provide users both a language
+                      translation and information on the topic from wikipedia.
+                    </p>
+                    <div class="viewmore">
+                      <a href="https://haooowu.github.io/TranslateNwiki/">
+                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                      </a>
+                      <a href="https://github.com/haooowu/TranslateNwiki">
+                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="imgholder">
+                  <img src="./public/images/emoji.png" alt="" />
+                </div>
+                <div class="description">
+                  <div class="wrap">
+                    <p class="title">jQuery Application</p>
+                    <span class="divide"></span>
+                    <p class="apitext">built with:</p>
+                    <div class="tags">
+                      <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                      <i title="jQuery" class="devicon-jquery-plain colored"></i>
+                      <i title="HTML5" class="devicon-html5-plain colored"></i>
+                      <i title="CSS3" class="devicon-css3-plain colored"></i>
+                    </div>
+                    <p>
+                      A memory game composed with popular emoji faces, which incorporates the dynamic use of classes.
+                    </p>
+                    <div class="viewmore">
+                      <a href="https://haooowu.github.io/emojimatchgame/">
+                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                      </a>
+                      <a href="https://github.com/haooowu/emojimatchgame">
+                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="imgholder">
+                  <img src="./public/images/psd.png" alt="" />
+                </div>
+                <div class="description">
+                  <div class="wrap">
+                    <p class="title">PSD Conversion to Responsive Design</p>
+                    <span class="divide"></span>
+                    <p class="apitext">built with:</p>
+                    <div class="tags">
+                      <i title="HTML5" class="devicon-html5-plain colored"></i>
+                      <i title="CSS3" class="devicon-css3-plain colored"></i>
+                      <i title="SASS" class="devicon-sass-original colored"></i>
+                    </div>
+                    <p>Converting an eye catching psd template into a fully responsive single page website.</p>
+                    <div class="viewmore">
+                      <a href="https://haooowu.github.io/StartupZ/">
+                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                      </a>
+                      <a href="https://github.com/haooowu/StartupZ">
+                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="imgholder">
+                  <img src="./public/images/andriod1.png" alt="" />
+                  <img src="./public/images/andriod2.png" alt="" />
+                </div>
+                <div class="description">
+                  <div class="wrap">
+                    <p class="title">Android App</p>
+                    <span class="divide"></span>
+                    <p class="apitext">built with:</p>
+                    <div class="tags">
+                      <i title="Java" class="devicon-java-plain colored"></i>
+                      <i title="Android" class="devicon-android-plain colored"></i>
+                      <img
+                        title="Firebase"
+                        src="./public/images/firebase_def.svg"
+                        alt="firebase icon"
+                        class="firebase_icon"
+                      />
+                      <i title="Git" class="devicon-git-plain colored"></i>
+                    </div>
+                    <p>
+                      An app called Campfire which allow UofT student to create, join, plan, chat, and monitor events
+                      and study groups.
+                    </p>
+                    <div class="viewmore">
+                      <a href="https://apkpure.com/campfire/com.vaperinc.campfire"><button>View APK</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contactsec">
+          <div class="wrapper">
+            <h1 id="contact">CONTACT ME</h1>
+            <div class="dash"></div>
+            <p>Email: haooo.wu@gmail.com</p>
+            <form action="https://formspree.io/haooo.wu@gmail.com" method="POST">
+              <p>NAME<span>*</span></p>
+              <input type="text" name="name" required />
+              <p>E-MAIL<span>*</span></p>
+              <input name="email" type="email" required />
+              <p>SUBJECT<span>*</span></p>
+              <input name="subject" type="text" required />
+              <p>MESSAGE<span>*</span></p>
+              <textarea name="message" cols="30" rows="10" required></textarea>
+              <button value="Send">submit</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <p>Email: haooo.wu@gmail.com</p>
+          <div class="contactlist">
+            <a href="https://twitter.com/HaoooWu"
+              ><span class="fa-stack fa">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span
+            ></a>
+            <a href="https://www.linkedin.com/in/hao-wu-b70b845b/"
+              ><span class="fa-stack fa">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span
+            ></a>
+            <a href="https://github.com/haooowu"
+              ><span class="fa-stack fa">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i> </span
+            ></a>
+            <a href="mailto:haooo.wu@gmail.com"
+              ><span class="fa-stack fa">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> </span
+            ></a>
+          </div>
+          <p>© Hao Wu 2019</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+    <script src="public/scripts/app.js"></script>
+  </body>
 </html>
