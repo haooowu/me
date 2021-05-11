@@ -1,24 +1,38 @@
 {
   "name": "me-personal-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "personal site",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hao Wu",
   "license": "ISC",
   "dependencies": {
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "babelify": "^10.0.0",
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "browserify": "^16.5.2",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
     "gulp-sass": "^4.1.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,md,html,css,scss}": "prettier --write"
   }
 }
