@@ -3,4 +3,6 @@ src
 package.json
 package-lock.json
 gulpfile.js
+/.husky
+/.vscode
 .DS_Store
