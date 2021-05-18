@@ -12,10 +12,7 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins" rel="stylesheet" />
     <link rel="icon" type="image/png" href="public/images/fav.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css" />
     <link rel="stylesheet" href="public/styles/style.css" />
   </head>
   <body>
@@ -41,7 +38,7 @@
               </li>
               <li>
                 <a href="#" v-scroll-to="'#work'" class="dot" :class="{'actived': navFlag.work}">
-                  <p><span>Work</span></p>
+                  <p id="li-work"><span>Work</span></p>
                 </a>
               </li>
               <li>
@@ -110,16 +107,20 @@
             <div class="dash"></div>
             <ul class="skilllist">
               <li>
+                <i class="devicon-typescript-plain colored"></i>
+                <p>TypeScript</p>
+              </li>
+              <li>
                 <i class="devicon-html5-plain colored"></i>
                 <p>HTML5</p>
               </li>
               <li>
-                <i class="devicon-css3-plain colored"></i>
-                <p>CSS3</p>
-              </li>
-              <li>
                 <i class="devicon-javascript-plain colored"></i>
                 <p>JavaScript</p>
+              </li>
+              <li>
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS3</p>
               </li>
               <li>
                 <i class="devicon-react-original colored"></i>
@@ -134,20 +135,32 @@
                 <p>SASS</p>
               </li>
               <li>
-                <i class="devicon-jquery-plain colored"></i>
-                <p>jQuery</p>
+                <img src="./public/images/accessibility-icon.svg" alt="a11y icon" />
+                <p>WCAG</p>
+              </li>
+              <li>
+                <i class="devicon-graphql-plain colored"></i>
+                <p>GraphQL</p>
+              </li>
+              <li>
+                <img src="./public/images/apollo-icon.svg" alt="sql icon" />
+                <p>Apollo</p>
               </li>
               <li>
                 <i class="devicon-git-plain colored"></i>
                 <p>Git</p>
               </li>
               <li>
-                <i class="devicon-nodejs-plain"></i>
-                <p>Node</p>
-              </li>
-              <li>
                 <i class="devicon-bootstrap-plain"></i>
                 <p>Bootstrap</p>
+              </li>
+              <li>
+                <i class="devicon-jquery-plain colored"></i>
+                <p>jQuery</p>
+              </li>
+              <li>
+                <i class="devicon-nodejs-plain"></i>
+                <p>Node</p>
               </li>
               <li>
                 <i class="devicon-webpack-plain"></i>
@@ -158,20 +171,20 @@
                 <p>Gulp</p>
               </li>
               <li>
+                <i class="devicon-bash-plain colored"></i>
+                <p>Bash</p>
+              </li>
+              <li>
                 <i class="devicon-python-plain colored"></i>
                 <p>Python</p>
               </li>
-              <li id="fb">
+              <li>
                 <img src="./public/images/firebase_def.svg" alt="firebase icon" />
                 <p>Firebase</p>
               </li>
               <li>
-                <i class="devicon-java-plain colored"></i>
-                <p>Java</p>
-              </li>
-              <li>
-                <i class="devicon-android-plain colored"></i>
-                <p>Android</p>
+                <img src="./public/images/sql-icon.svg" alt="sql icon" />
+                <p>SQL</p>
               </li>
             </ul>
           </div>
@@ -334,37 +347,6 @@
                   </div>
                 </div>
               </div>
-              <div class="project">
-                <div class="imgholder">
-                  <img src="./public/images/andriod1.png" alt="" />
-                  <img src="./public/images/andriod2.png" alt="" />
-                </div>
-                <div class="description">
-                  <div class="wrap">
-                    <p class="title">Android App</p>
-                    <span class="divide"></span>
-                    <p class="apitext">built with:</p>
-                    <div class="tags">
-                      <i title="Java" class="devicon-java-plain colored"></i>
-                      <i title="Android" class="devicon-android-plain colored"></i>
-                      <img
-                        title="Firebase"
-                        src="./public/images/firebase_def.svg"
-                        alt="firebase icon"
-                        class="firebase_icon"
-                      />
-                      <i title="Git" class="devicon-git-plain colored"></i>
-                    </div>
-                    <p>
-                      An app called Campfire which allow UofT student to create, join, plan, chat, and monitor events
-                      and study groups.
-                    </p>
-                    <div class="viewmore">
-                      <a href="https://apkpure.com/campfire/com.vaperinc.campfire"><button>View APK</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -373,7 +355,7 @@
             <h1 id="contact">CONTACT ME</h1>
             <div class="dash"></div>
             <p>Email: haooo.wu@gmail.com</p>
-            <form action="https://formspree.io/haooo.wu@gmail.com" method="POST">
+            <form action="https://formspree.io/f/haooo.wu@gmail.com" method="POST">
               <p>NAME<span>*</span></p>
               <input type="text" name="name" required />
               <p>E-MAIL<span>*</span></p>

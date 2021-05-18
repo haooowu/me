@@ -103,14 +103,16 @@ section.sidenav {
         border: none;
       }
       p {
-        background-color: rgba(0, 0, 0, 0.9);
-        span {
-          color: #ffffff;
+        &:not(#li-work) {
+          background-color: rgba(0, 0, 0, 0.9);
+          span {
+            color: #ffffff;
+          }
         }
         @include respond_to(spacing) {
-          background-color: transparent;
+          background-color: transparent !important;
           span {
-            color: #2c6ed5;
+            color: #2c6ed5 !important;
           }
         }
       }
@@ -171,7 +173,7 @@ section.no-touch {
 }
 
 #main {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
   position: relative;
   text-align: center;

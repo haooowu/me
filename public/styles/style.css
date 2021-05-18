@@ -348,20 +348,6 @@ input::-moz-focus-inner {
       display: flex;
       width: 100%;
       flex-wrap: wrap; }
-      #worksec #showcases .project:last-child {
-        font-size: 0; }
-        #worksec #showcases .project:last-child div.imgholder {
-          display: flex;
-          justify-content: space-around; }
-          #worksec #showcases .project:last-child div.imgholder img {
-            width: 50%;
-            height: 100%; }
-            #worksec #showcases .project:last-child div.imgholder img:first-child {
-              position: relative;
-              left: 30px; }
-            #worksec #showcases .project:last-child div.imgholder img:last-child {
-              position: relative;
-              right: 30px; }
       #worksec #showcases .project p {
         font-size: 13px;
         font-family: "Poppins", sans-serif;
@@ -633,15 +619,15 @@ section.sidenav nav {
     @media only screen and (max-width: 789px) {
       section.sidenav nav a.actived {
         border: none; } }
-    section.sidenav nav a.actived p {
+    section.sidenav nav a.actived p:not(#li-work) {
       background-color: rgba(0, 0, 0, 0.9); }
-      section.sidenav nav a.actived p span {
+      section.sidenav nav a.actived p:not(#li-work) span {
         color: #ffffff; }
-      @media only screen and (max-width: 789px) {
-        section.sidenav nav a.actived p {
-          background-color: transparent; }
-          section.sidenav nav a.actived p span {
-            color: #2c6ed5; } }
+    @media only screen and (max-width: 789px) {
+      section.sidenav nav a.actived p {
+        background-color: transparent !important; }
+        section.sidenav nav a.actived p span {
+          color: #2c6ed5 !important; } }
   section.sidenav nav p {
     position: relative;
     float: right;
@@ -686,7 +672,7 @@ section.no-touch a.dot:hover p {
       color: #2c6ed5; } }
 
 #main {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
   position: relative;
   text-align: center; }

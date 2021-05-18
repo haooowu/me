@@ -38,25 +38,6 @@
       display: flex;
       width: 100%;
       flex-wrap: wrap;
-      &:last-child {
-        font-size: 0;
-        div.imgholder {
-          display: flex;
-          justify-content: space-around;
-          img {
-            width: 50%;
-            height: 100%;
-            &:first-child {
-              position: relative;
-              left: 30px;
-            }
-            &:last-child {
-              position: relative;
-              right: 30px;
-            }
-          }
-        } //last
-      }
       p {
         font-size: 13px;
         font-family: $poppin;
