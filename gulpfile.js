@@ -9,6 +9,7 @@ const tsify = require('tsify');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const notify = require('gulp-notify');
+const uglify = require('gulp-uglify');
 
 const reload = browserSync.reload;
 
@@ -53,6 +54,12 @@ function tsTask() {
     })
     .pipe(source('app.js'))
     .pipe(buffer())
+    .pipe(
+      uglify().on('error', (uglify) => {
+        console.error(uglify.message);
+        this.emit('end');
+      }),
+    )
     .pipe(gulp.dest('./public/scripts'))
     .pipe(reload({stream: true}));
 }

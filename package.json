@@ -1,7 +1,7 @@
 {
-  "name": "me-personal-site",
+  "name": "my-personal-site",
   "version": "1.0.0",
-  "description": "personal site",
+  "description": "personal portfolio website",
   "main": "gulpfile.js",
   "scripts": {
     "pre-commit": "lint-staged",
@@ -22,6 +22,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
     "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "2.3.0",
