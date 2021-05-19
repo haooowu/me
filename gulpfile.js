@@ -1,4 +1,6 @@
 const gulp = require('gulp');
+const babelify = require('babelify');
+const autoprefixer = require('gulp-autoprefixer');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
@@ -10,24 +12,34 @@ const notify = require('gulp-notify');
 
 const reload = browserSync.reload;
 
-// https://www.typescriptlang.org/docs/handbook/gulp.html
-// https://stackoverflow.com/questions/59799546/typescript-babelify-browserify-uglify-buildchain-in-gulp
+const babelConfig = {
+  presets: ['@babel/preset-env'],
+  extensions: ['.ts'],
+};
+
+const browserifyConfig = {
+  entries: ['./src/scripts/app.ts'],
+  debug: true,
+};
 
 function stylesTask() {
   return gulp
     .src('./src/styles/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ['> 1%'],
+      }),
+    )
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./public/styles/'))
     .pipe(reload({stream: true}));
 }
 
 function tsTask() {
-  return browserify('./src/scripts/app.ts', {debug: true})
+  return browserify(browserifyConfig)
     .plugin(tsify)
-    .transform('babelify', {
-      presets: ['@babel/preset-env'],
-    })
+    .transform(babelify, babelConfig)
     .bundle()
     .on(
       'error',

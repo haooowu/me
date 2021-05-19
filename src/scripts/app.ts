@@ -1,14 +1,4 @@
-function debounce(func: Function, delay: number) {
-  let flag = false;
-  return function () {
-    if (flag) return;
-    func.apply(this, arguments);
-    flag = true;
-    setTimeout(() => {
-      flag = false;
-    }, delay);
-  };
-}
+import debounce from './debounce';
 
 function isSectionInView(element: HTMLElement) {
   const rect = element.getBoundingClientRect();
@@ -57,3 +47,5 @@ const app = new Vue({
     handleScroll: debounce(navController, 30),
   },
 });
+
+export default app;
