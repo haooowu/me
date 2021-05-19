@@ -175,7 +175,8 @@ input::-moz-focus-inner {
     width: 100%; } }
 
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     border-color: transparent; }
   50% {
     border-color: white; } }
