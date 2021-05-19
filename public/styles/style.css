@@ -549,6 +549,44 @@ footer {
     padding-top: 10px;
     font-size: 12px; }
 
+.inputTabView input[type="radio"], .tabSections > section {
+  display: none; }
+
+.inputTabView input:nth-of-type(1):checked ~ .tabSections section:nth-of-type(1),
+.inputTabView input:nth-of-type(2):checked ~ .tabSections section:nth-of-type(2) {
+  display: block; }
+
+.inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1),
+.inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2) {
+  background-color: teal; }
+
+.tabLabels {
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .tabLabels label {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 80px;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bold; }
+    .tabLabels label:active {
+      color: teal; }
+
+.tabSections p {
+  color: white;
+  line-height: 1.5em;
+  font-size: 16px; }
+
+.tabSections section {
+  margin-top: 30px; }
+
 p,
 h1,
 h2,
