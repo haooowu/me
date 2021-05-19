@@ -38,7 +38,7 @@
               </li>
               <li>
                 <a href="#" v-scroll-to="'#work'" class="dot" :class="{'actived': navFlag.work}">
-                  <p id="li-work"><span>Work</span></p>
+                  <p><span>Work</span></p>
                 </a>
               </li>
               <li>
@@ -199,179 +199,337 @@
               <input type="radio" name="tab1" id="tab2" aria-controls="bar" />
 
               <div class="tabLabels">
-                <label for="tab1">foo</label>
-                <label for="tab2">bar</label>
+                <label for="tab1">Featured</label>
+                <label for="tab2">Past Projects</label>
               </div>
 
               <div class="tabSections">
                 <section>
-                  <p><strong>Foo: </strong></p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sequi asperiores magni expedita,
-                    fuga veritatis praesentium repudiandae. Nostrum ratione facilis nam, alias nemo facere, molestias,
-                    recusandae nihil cupiditate libero fuga?
-                  </p>
+                  <div id="showcases">
+                    <div class="project">
+                      <div class="imgholder">
+                        <img src="./public/images/react.png" alt="" />
+                      </div>
+                      <div class="description">
+                        <div class="wrap">
+                          <p class="title">React Application</p>
+                          <span class="divide"></span>
+                          <p class="apitext">built with:</p>
+                          <div class="tags">
+                            <i title="React.js" class="devicon-react-original colored"></i>
+                            <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                            <i title="HTML5" class="devicon-html5-plain colored"></i>
+                            <i title="CSS3" class="devicon-css3-plain colored"></i>
+                            <img
+                              title="Firebase"
+                              src="./public/images/firebase_def.svg"
+                              alt="firebase icon"
+                              class="firebase_icon"
+                            />
+                            <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                            <i title="SASS" class="devicon-sass-original colored"></i>
+                          </div>
+                          <p>
+                            An Eventbrite viewer built with React and firebase. Each event has its own chat room, user
+                            can login from their google account and chat with other people for specific events, or view
+                            their chat history and message count.
+                          </p>
+                          <div class="viewmore">
+                            <a href="https://project-6-cb9b9.firebaseapp.com/">
+                              <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                            </a>
+                            <a href="https://github.com/haooowu/EventChat">
+                              <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div class="imgholder">
+                        <img src="./public/images/translator.png" alt="" />
+                      </div>
+                      <div class="description">
+                        <div class="wrap">
+                          <p class="title">JavaScript API Application</p>
+                          <span class="divide"></span>
+                          <p class="apitext">built with:</p>
+                          <div class="tags">
+                            <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                            <i title="HTML5" class="devicon-html5-plain colored"></i>
+                            <i title="CSS3" class="devicon-css3-plain colored"></i>
+                            <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                            <i title="SASS" class="devicon-sass-original colored"></i>
+                          </div>
+                          <p>
+                            An online translator that utilizes both Yandex and Wikipedia APIs to provide users both a
+                            language translation and information on the topic from wikipedia.
+                          </p>
+                          <div class="viewmore">
+                            <a href="https://haooowu.github.io/TranslateNwiki/">
+                              <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                            </a>
+                            <a href="https://github.com/haooowu/TranslateNwiki">
+                              <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div class="imgholder">
+                        <img src="./public/images/spotify.png" alt="" />
+                      </div>
+                      <div class="description">
+                        <div class="wrap">
+                          <p class="title">Client Design Project</p>
+                          <span class="divide"></span>
+                          <div class="tags">
+                            <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                            <i title="jQuery" class="devicon-jquery-plain colored"></i>
+                            <i title="HTML5" class="devicon-html5-plain colored"></i>
+                            <i title="CSS3" class="devicon-css3-plain colored"></i>
+                            <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                            <i title="Git" class="devicon-git-plain colored"></i>
+                            <i title="SASS" class="devicon-sass-original colored"></i>
+                          </div>
+                          <p>
+                            A viewer utilizing the Spotify API to simulated a "Netflix" style catalogue that dynamically
+                            displays popular track that provides additional information about the album and artists.
+                          </p>
+                          <div class="viewmore">
+                            <a href="https://haooowu.github.io/Topify/">
+                              <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                            </a>
+                            <a href="https://github.com/haooowu/Topify">
+                              <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div class="imgholder">
+                        <img src="./public/images/emoji.png" alt="" />
+                      </div>
+                      <div class="description">
+                        <div class="wrap">
+                          <p class="title">jQuery Application</p>
+                          <span class="divide"></span>
+                          <p class="apitext">built with:</p>
+                          <div class="tags">
+                            <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                            <i title="jQuery" class="devicon-jquery-plain colored"></i>
+                            <i title="HTML5" class="devicon-html5-plain colored"></i>
+                            <i title="CSS3" class="devicon-css3-plain colored"></i>
+                          </div>
+                          <p>
+                            A memory game composed with popular emoji faces, which incorporates the dynamic use of
+                            classes.
+                          </p>
+                          <div class="viewmore">
+                            <a href="https://haooowu.github.io/emojimatchgame/">
+                              <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                            </a>
+                            <a href="https://github.com/haooowu/emojimatchgame">
+                              <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div class="imgholder">
+                        <img src="./public/images/psd.png" alt="" />
+                      </div>
+                      <div class="description">
+                        <div class="wrap">
+                          <p class="title">PSD Conversion to Responsive Design</p>
+                          <span class="divide"></span>
+                          <p class="apitext">built with:</p>
+                          <div class="tags">
+                            <i title="HTML5" class="devicon-html5-plain colored"></i>
+                            <i title="CSS3" class="devicon-css3-plain colored"></i>
+                            <i title="SASS" class="devicon-sass-original colored"></i>
+                          </div>
+                          <p>Converting an eye catching psd template into a fully responsive single page website.</p>
+                          <div class="viewmore">
+                            <a href="https://haooowu.github.io/StartupZ/">
+                              <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                            </a>
+                            <a href="https://github.com/haooowu/StartupZ">
+                              <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </section>
 
                 <section>
-                  <div>TODO: Responsive CSS masonry</div>
+                  <div class="masonryGrid">
+                    <div class="masonryItemCard">
+                      <div class="cardImage"><img src="https://picsum.photos/500/800/?image=10" /></div>
+                      <div class="cardContent">
+                        <div class="description">
+                          <div class="wrap">
+                            <p class="title">React Application</p>
+                            <span class="divide"></span>
+                            <p class="apitext">built with:</p>
+                            <div class="tags">
+                              <i title="React.js" class="devicon-react-original colored"></i>
+                              <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                              <i title="HTML5" class="devicon-html5-plain colored"></i>
+                              <i title="CSS3" class="devicon-css3-plain colored"></i>
+                              <img
+                                title="Firebase"
+                                src="./public/images/firebase_def.svg"
+                                alt="firebase icon"
+                                class="firebase_icon"
+                              />
+                              <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                              <i title="SASS" class="devicon-sass-original colored"></i>
+                            </div>
+                            <p>
+                              An Eventbrite viewer built with React and firebase. Each event has its own chat room, user
+                              can login from their google account and chat with other people for specific events, or
+                              view their chat history and message count.
+                            </p>
+                            <div class="viewmore">
+                              <a href="https://project-6-cb9b9.firebaseapp.com/">
+                                <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                              </a>
+                              <a href="https://github.com/haooowu/EventChat">
+                                <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="masonryItemCard">
+                      <div class="cardImage"><img src="https://picsum.photos/600/400/?image=12" /></div>
+                      <div class="cardContent">
+                        <div class="description">
+                          <div class="wrap">
+                            <p class="title">JavaScript API Application</p>
+                            <span class="divide"></span>
+                            <p class="apitext">built with:</p>
+                            <div class="tags">
+                              <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                              <i title="HTML5" class="devicon-html5-plain colored"></i>
+                              <i title="CSS3" class="devicon-css3-plain colored"></i>
+                              <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                              <i title="SASS" class="devicon-sass-original colored"></i>
+                            </div>
+                            <p>
+                              An online translator that utilizes both Yandex and Wikipedia APIs to provide users both a
+                              language translation and information on the topic from wikipedia.
+                            </p>
+                            <div class="viewmore">
+                              <a href="https://haooowu.github.io/TranslateNwiki/">
+                                <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                              </a>
+                              <a href="https://github.com/haooowu/TranslateNwiki">
+                                <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="masonryItemCard">
+                      <div class="cardImage"><img src="https://picsum.photos/800/700/?image=13" /></div>
+                      <div class="cardContent">
+                        <div class="description">
+                          <div class="wrap">
+                            <p class="title">Client Design Project</p>
+                            <span class="divide"></span>
+                            <div class="tags">
+                              <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                              <i title="jQuery" class="devicon-jquery-plain colored"></i>
+                              <i title="HTML5" class="devicon-html5-plain colored"></i>
+                              <i title="CSS3" class="devicon-css3-plain colored"></i>
+                              <i title="Gulp" class="devicon-gulp-plain colored"></i>
+                              <i title="Git" class="devicon-git-plain colored"></i>
+                              <i title="SASS" class="devicon-sass-original colored"></i>
+                            </div>
+                            <p>
+                              A viewer utilizing the Spotify API to simulated a "Netflix" style catalogue that
+                              dynamically displays popular track that provides additional information about the album
+                              and artists.
+                            </p>
+                            <div class="viewmore">
+                              <a href="https://haooowu.github.io/Topify/">
+                                <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                              </a>
+                              <a href="https://github.com/haooowu/Topify">
+                                <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="masonryItemCard">
+                      <div class="cardImage"><img src="https://picsum.photos/500/300/?image=14" /></div>
+                      <div class="cardContent">
+                        <div class="description">
+                          <div class="wrap">
+                            <p class="title">jQuery Application</p>
+                            <span class="divide"></span>
+                            <p class="apitext">built with:</p>
+                            <div class="tags">
+                              <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+                              <i title="jQuery" class="devicon-jquery-plain colored"></i>
+                              <i title="HTML5" class="devicon-html5-plain colored"></i>
+                              <i title="CSS3" class="devicon-css3-plain colored"></i>
+                            </div>
+                            <p>
+                              A memory game composed with popular emoji faces, which incorporates the dynamic use of
+                              classes.
+                            </p>
+                            <div class="viewmore">
+                              <a href="https://haooowu.github.io/emojimatchgame/">
+                                <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                              </a>
+                              <a href="https://github.com/haooowu/emojimatchgame">
+                                <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="masonryItemCard">
+                      <div class="cardImage"><img src="https://picsum.photos/400/700/?image=11" /></div>
+                      <div class="cardContent">
+                        <div class="description">
+                          <div class="wrap">
+                            <p class="title">PSD Conversion to Responsive Design</p>
+                            <span class="divide"></span>
+                            <p class="apitext">built with:</p>
+                            <div class="tags">
+                              <i title="HTML5" class="devicon-html5-plain colored"></i>
+                              <i title="CSS3" class="devicon-css3-plain colored"></i>
+                              <i title="SASS" class="devicon-sass-original colored"></i>
+                            </div>
+                            <p>Converting an eye catching psd template into a fully responsive single page website.</p>
+                            <div class="viewmore">
+                              <a href="https://haooowu.github.io/StartupZ/">
+                                <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
+                              </a>
+                              <a href="https://github.com/haooowu/StartupZ">
+                                <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </section>
-              </div>
-            </div>
-
-            <div id="showcases">
-              <div class="project">
-                <div class="imgholder">
-                  <img src="./public/images/react.png" alt="" />
-                </div>
-                <div class="description">
-                  <div class="wrap">
-                    <p class="title">React Application</p>
-                    <span class="divide"></span>
-                    <p class="apitext">built with:</p>
-                    <div class="tags">
-                      <i title="React.js" class="devicon-react-original colored"></i>
-                      <i title="JavaScript" class="devicon-javascript-plain colored"></i>
-                      <i title="HTML5" class="devicon-html5-plain colored"></i>
-                      <i title="CSS3" class="devicon-css3-plain colored"></i>
-                      <img
-                        title="Firebase"
-                        src="./public/images/firebase_def.svg"
-                        alt="firebase icon"
-                        class="firebase_icon"
-                      />
-                      <i title="Gulp" class="devicon-gulp-plain colored"></i>
-                      <i title="SASS" class="devicon-sass-original colored"></i>
-                    </div>
-                    <p>
-                      An Eventbrite viewer built with React and firebase. Each event has its own chat room, user can
-                      login from their google account and chat with other people for specific events, or view their chat
-                      history and message count.
-                    </p>
-                    <div class="viewmore">
-                      <a href="https://project-6-cb9b9.firebaseapp.com/">
-                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-                      </a>
-                      <a href="https://github.com/haooowu/EventChat">
-                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="project">
-                <div class="imgholder">
-                  <img src="./public/images/translator.png" alt="" />
-                </div>
-                <div class="description">
-                  <div class="wrap">
-                    <p class="title">JavaScript API Application</p>
-                    <span class="divide"></span>
-                    <p class="apitext">built with:</p>
-                    <div class="tags">
-                      <i title="JavaScript" class="devicon-javascript-plain colored"></i>
-                      <i title="HTML5" class="devicon-html5-plain colored"></i>
-                      <i title="CSS3" class="devicon-css3-plain colored"></i>
-                      <i title="Gulp" class="devicon-gulp-plain colored"></i>
-                      <i title="SASS" class="devicon-sass-original colored"></i>
-                    </div>
-                    <p>
-                      An online translator that utilizes both Yandex and Wikipedia APIs to provide users both a language
-                      translation and information on the topic from wikipedia.
-                    </p>
-                    <div class="viewmore">
-                      <a href="https://haooowu.github.io/TranslateNwiki/">
-                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-                      </a>
-                      <a href="https://github.com/haooowu/TranslateNwiki">
-                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="project">
-                <div class="imgholder">
-                  <img src="./public/images/spotify.png" alt="" />
-                </div>
-                <div class="description">
-                  <div class="wrap">
-                    <p class="title">Client Design Project</p>
-                    <span class="divide"></span>
-                    <div class="tags">
-                      <i title="JavaScript" class="devicon-javascript-plain colored"></i>
-                      <i title="jQuery" class="devicon-jquery-plain colored"></i>
-                      <i title="HTML5" class="devicon-html5-plain colored"></i>
-                      <i title="CSS3" class="devicon-css3-plain colored"></i>
-                      <i title="Gulp" class="devicon-gulp-plain colored"></i>
-                      <i title="Git" class="devicon-git-plain colored"></i>
-                      <i title="SASS" class="devicon-sass-original colored"></i>
-                    </div>
-                    <p>
-                      A viewer utilizing the Spotify API to simulated a "Netflix" style catalogue that dynamically
-                      displays popular track that provides additional information about the album and artists.
-                    </p>
-                    <div class="viewmore">
-                      <a href="https://haooowu.github.io/Topify/"><button>View Live</button></a
-                      ><a href="https://github.com/haooowu/Topify"><button>Github</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="project">
-                <div class="imgholder">
-                  <img src="./public/images/emoji.png" alt="" />
-                </div>
-                <div class="description">
-                  <div class="wrap">
-                    <p class="title">jQuery Application</p>
-                    <span class="divide"></span>
-                    <p class="apitext">built with:</p>
-                    <div class="tags">
-                      <i title="JavaScript" class="devicon-javascript-plain colored"></i>
-                      <i title="jQuery" class="devicon-jquery-plain colored"></i>
-                      <i title="HTML5" class="devicon-html5-plain colored"></i>
-                      <i title="CSS3" class="devicon-css3-plain colored"></i>
-                    </div>
-                    <p>
-                      A memory game composed with popular emoji faces, which incorporates the dynamic use of classes.
-                    </p>
-                    <div class="viewmore">
-                      <a href="https://haooowu.github.io/emojimatchgame/">
-                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-                      </a>
-                      <a href="https://github.com/haooowu/emojimatchgame">
-                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="project">
-                <div class="imgholder">
-                  <img src="./public/images/psd.png" alt="" />
-                </div>
-                <div class="description">
-                  <div class="wrap">
-                    <p class="title">PSD Conversion to Responsive Design</p>
-                    <span class="divide"></span>
-                    <p class="apitext">built with:</p>
-                    <div class="tags">
-                      <i title="HTML5" class="devicon-html5-plain colored"></i>
-                      <i title="CSS3" class="devicon-css3-plain colored"></i>
-                      <i title="SASS" class="devicon-sass-original colored"></i>
-                    </div>
-                    <p>Converting an eye catching psd template into a fully responsive single page website.</p>
-                    <div class="viewmore">
-                      <a href="https://haooowu.github.io/StartupZ/">
-                        <button><i class="fa fa-globe" aria-hidden="true"></i> View Live</button>
-                      </a>
-                      <a href="https://github.com/haooowu/StartupZ">
-                        <button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -1,1 +1,38 @@
-// TODO: Responsive CSS masonry
+.masonryGrid {
+  column-count: 3;
+  column-gap: 30px;
+  transition: all 0.5s ease-in-out;
+  column-fill: initial;
+  @include respond_to(medium) {
+    column-count: 2;
+  }
+  @include respond_to(spacing) {
+    column-count: 1;
+  }
+}
+
+.masonryItemCard {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 16px 32px -14px rgba(160, 160, 160, 0.2);
+  overflow: hidden;
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  .cardContent {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, royalblue 1%, teal 100%);
+  }
+  .cardTitle {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+}

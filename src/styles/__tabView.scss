@@ -10,28 +10,34 @@
 
 .inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1),
 .inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2) {
-  background-color: teal;
+  background-color: #2c6ed5;
 }
 
 .tabLabels {
-  border-bottom: 1px solid white;
+  margin: 0 10px;
+  border-bottom: 1px solid #cccccc;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @include respond_to(large) {
+    margin: 0 40px;
+  }
+  @include respond_to(medium) {
+    margin: 0 20px;
+  }
   label {
     position: relative;
     display: inline-block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     font-size: 16px;
     height: 40px;
     line-height: 40px;
-    min-width: 80px;
+    min-width: 120px;
     color: white;
     border: 1px solid transparent;
     cursor: pointer;
     font-weight: bold;
-    &:active {
-      color: teal;
-    }
   }
 }
 

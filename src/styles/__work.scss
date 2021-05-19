@@ -1,5 +1,5 @@
 #worksec {
-  overflow: hidden; //Ghost space
+  overflow: hidden; //ghost space
   font-size: 0;
   background-color: #242424;
   text-align: center;
@@ -36,13 +36,9 @@
     .project {
       margin-top: 95px;
       display: flex;
+      align-items: center;
       width: 100%;
       flex-wrap: wrap;
-      p {
-        font-size: 13px;
-        font-family: $poppin;
-        color: #ffffff;
-      }
       div.imgholder {
         flex: 1 0 45%;
         overflow: hidden;
@@ -54,115 +50,118 @@
           height: 100%;
         }
       }
-      div.description {
+    }
+  }
+}
+
+div.description {
+  position: relative;
+  flex: 1 0 55%;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+  height: 100%;
+  @include respond_to(large) {
+    flex: 1 0 98%;
+    min-height: 280px;
+  }
+  p {
+    font-size: 13px;
+    font-family: $poppin;
+    color: #ffffff;
+  }
+  div.wrap {
+    @include respond_to(large) {
+      position: relative;
+      top: 0;
+      transform: translateY(0);
+    }
+    p {
+      font-size: 17px;
+      @include respond_to(large) {
+        text-align: center;
+        margin: 0 5%;
+      }
+    }
+    span.divide {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      background-color: #cccccc;
+      width: 99%;
+      height: 2px;
+      margin: 5px 0 15px 0;
+      @include respond_to(large) {
+        width: 89%;
+      }
+    }
+    .title {
+      font-size: 23px;
+      @include respond_to(large) {
+        text-align: center;
+        padding-top: 15px;
+      }
+    }
+    .tags,
+    .apitext {
+      color: #71a9f1;
+      font-family: $lato;
+      @include respond_to(large) {
+        text-align: center;
+      }
+    }
+    .tags {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    .apitext {
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .viewmore {
+      display: flex;
+      justify-content: space-between;
+      bottom: 5px;
+      width: 50%;
+      max-width: 300px;
+      padding-top: 25px;
+      @include respond_to(large) {
         position: relative;
-        flex: 1 0 55%;
-        padding-bottom: 10px;
-        padding-left: 10px;
+        justify-content: space-around;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include respond_to(medium) {
+        margin-top: 15px;
         position: relative;
-        text-align: left;
-        @include respond_to(large) {
-          flex: 1 0 98%;
-          min-height: 280px;
+      }
+      @include respond_to(small) {
+        position: relative;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        width: 70%;
+      }
+      button {
+        margin: 5px;
+        right: 11px;
+        top: 11px;
+        background-color: #2c6ed5;
+        border: none;
+        width: 108px;
+        height: 35px;
+        border-radius: 10px;
+        font-family: $mont;
+        color: #ffffff;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        &:last-child {
+          width: 120px;
         }
-        div.wrap {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          @include respond_to(large) {
-            position: relative;
-            top: 0;
-            transform: translateY(0);
-          }
-          p {
-            font-size: 17px;
-            @include respond_to(large) {
-              text-align: center;
-              margin: 0 5%;
-            }
-          }
-          span.divide {
-            display: block;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            background-color: #cccccc;
-            width: 99%;
-            height: 2px;
-            margin: 5px 0 15px 0;
-            @include respond_to(large) {
-              width: 89%;
-            }
-          }
-          .title {
-            font-size: 23px;
-            @include respond_to(large) {
-              text-align: center;
-              padding-top: 15px;
-            }
-          }
-          .tags,
-          .apitext {
-            color: #71a9f1;
-            font-family: $lato;
-            @include respond_to(large) {
-              text-align: center;
-            }
-          }
-          .tags {
-            margin-bottom: 20px;
-            font-size: 24px;
-          }
-          .apitext {
-            text-transform: uppercase;
-            font-size: 16px;
-            margin-bottom: 10px;
-          }
-          .viewmore {
-            display: flex;
-            justify-content: space-between;
-            bottom: 5px;
-            width: 50%;
-            max-width: 300px;
-            padding-top: 25px;
-            @include respond_to(large) {
-              position: relative;
-              justify-content: space-around;
-              left: 50%;
-              transform: translateX(-50%);
-            }
-            @include respond_to(medium) {
-              margin-top: 15px;
-              position: relative;
-            }
-            @include respond_to(small) {
-              position: relative;
-              flex-wrap: wrap;
-              padding-top: 15px;
-              width: 70%;
-            }
-            button {
-              margin: 5px;
-              right: 11px;
-              top: 11px;
-              background-color: #2c6ed5;
-              border: none;
-              width: 108px;
-              height: 35px;
-              border-radius: 10px;
-              font-family: $mont;
-              color: #ffffff;
-              font-size: 15px;
-              line-height: 21px;
-              text-align: center;
-              &:last-child {
-                width: 120px;
-              }
-            } //end of button
-          } //end of viewmore button holder
-        } //end of wrap
-      } //end of description
-    } //end of project
-  } //end of showcase
+      }
+    }
+  }
 }

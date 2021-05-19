@@ -7,8 +7,9 @@
 @import '_contact';
 @import '_work';
 @import '_skill';
+@import '_sideNav';
 @import '_tabView';
-@import '_masonry.scss';
+@import '_masonry';
 
 p,
 h1,
@@ -35,145 +36,6 @@ header {
   background-repeat: repeat-x;
   background-size: cover;
   z-index: -1;
-}
-
-section.sidenav {
-  nav {
-    width: 100px;
-    position: fixed;
-    top: 50%;
-    right: 16px;
-    transform: translate(0, -50%);
-    z-index: 9;
-    text-align: right;
-    @include respond_to(spacing) {
-      width: 100%;
-      height: 50px;
-      margin: 0 auto;
-      top: 0;
-      left: 0;
-      right: 0;
-      transform: translate(0, 0);
-      background-color: rgba(0, 0, 0, 0.85);
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      @include respond_to(spacing) {
-        line-height: 50px;
-        display: flex;
-        justify-content: space-around;
-      }
-      li {
-        height: 29px;
-        @include respond_to(spacing) {
-          //for safari
-          height: auto;
-          width: auto;
-          color: #ffffff;
-        }
-      }
-    }
-    a.dot {
-      display: inline-block;
-      z-index: 9;
-      color: transparent;
-      border-radius: 50%;
-      border: 2px solid #999999;
-      background-color: #ffffff;
-      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
-      width: 10px;
-      height: 10px;
-      @include respond_to(spacing) {
-        color: transparent;
-        width: auto;
-        border-radius: 0;
-        border: none;
-        margin: 0;
-        padding: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: none;
-        p {
-          color: white;
-        }
-      }
-    }
-    a.actived {
-      border: 2px solid #2c6ed5;
-      @include respond_to(spacing) {
-        border: none;
-      }
-      p {
-        &:not(#li-work) {
-          background-color: rgba(0, 0, 0, 0.9);
-          span {
-            color: #ffffff;
-          }
-        }
-        @include respond_to(spacing) {
-          background-color: transparent !important;
-          span {
-            color: #2c6ed5 !important;
-          }
-        }
-      }
-    }
-    p {
-      position: relative;
-      float: right;
-      border-radius: 10px;
-      width: 65px;
-      height: 29px;
-      right: 16px;
-      top: -10px;
-      z-index: 9;
-      text-align: right;
-      @include respond_to(spacing) {
-        position: initial;
-        float: none;
-        width: auto;
-        height: auto;
-        right: 0;
-      }
-      span {
-        font-family: $mont;
-        font-size: 13px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -55%);
-        @include respond_to(spacing) {
-          font-size: 14px;
-          font-weight: bold;
-          position: relative;
-          top: 0;
-          left: 0;
-        }
-      }
-    }
-  }
-}
-
-section.no-touch {
-  a.dot:hover {
-    p {
-      background-color: rgba(0, 0, 0, 0.9);
-      span {
-        color: #ffffff;
-      }
-    }
-    @include respond_to(spacing) {
-      p {
-        background-color: transparent;
-        span {
-          color: #2c6ed5;
-        }
-      }
-    }
-  }
 }
 
 #main {

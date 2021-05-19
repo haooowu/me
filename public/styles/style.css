@@ -362,12 +362,9 @@ input::-moz-focus-inner {
     #worksec #showcases .project {
       margin-top: 95px;
       display: flex;
+      align-items: center;
       width: 100%;
       flex-wrap: wrap; }
-      #worksec #showcases .project p {
-        font-size: 13px;
-        font-family: "Poppins", sans-serif;
-        color: #ffffff; }
       #worksec #showcases .project div.imgholder {
         flex: 1 0 45%;
         overflow: hidden; }
@@ -377,105 +374,106 @@ input::-moz-focus-inner {
         #worksec #showcases .project div.imgholder img {
           width: 100%;
           height: 100%; }
-      #worksec #showcases .project div.description {
+
+div.description {
+  position: relative;
+  flex: 1 0 55%;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+  height: 100%; }
+  @media only screen and (max-width: 1028px) {
+    div.description {
+      flex: 1 0 98%;
+      min-height: 280px; } }
+  div.description p {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff; }
+  @media only screen and (max-width: 1028px) {
+    div.description div.wrap {
+      position: relative;
+      top: 0;
+      transform: translateY(0); } }
+  div.description div.wrap p {
+    font-size: 17px; }
+    @media only screen and (max-width: 1028px) {
+      div.description div.wrap p {
+        text-align: center;
+        margin: 0 5%; } }
+  div.description div.wrap span.divide {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #cccccc;
+    width: 99%;
+    height: 2px;
+    margin: 5px 0 15px 0; }
+    @media only screen and (max-width: 1028px) {
+      div.description div.wrap span.divide {
+        width: 89%; } }
+  div.description div.wrap .title {
+    font-size: 23px; }
+    @media only screen and (max-width: 1028px) {
+      div.description div.wrap .title {
+        text-align: center;
+        padding-top: 15px; } }
+  div.description div.wrap .tags,
+  div.description div.wrap .apitext {
+    color: #71a9f1;
+    font-family: "Lato", sans-serif; }
+    @media only screen and (max-width: 1028px) {
+      div.description div.wrap .tags,
+      div.description div.wrap .apitext {
+        text-align: center; } }
+  div.description div.wrap .tags {
+    margin-bottom: 20px;
+    font-size: 24px; }
+  div.description div.wrap .apitext {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px; }
+  div.description div.wrap .viewmore {
+    display: flex;
+    justify-content: space-between;
+    bottom: 5px;
+    width: 50%;
+    max-width: 300px;
+    padding-top: 25px; }
+    @media only screen and (max-width: 1028px) {
+      div.description div.wrap .viewmore {
         position: relative;
-        flex: 1 0 55%;
-        padding-bottom: 10px;
-        padding-left: 10px;
+        justify-content: space-around;
+        left: 50%;
+        transform: translateX(-50%); } }
+    @media only screen and (max-width: 768px) {
+      div.description div.wrap .viewmore {
+        margin-top: 15px;
+        position: relative; } }
+    @media only screen and (max-width: 480px) {
+      div.description div.wrap .viewmore {
         position: relative;
-        text-align: left; }
-        @media only screen and (max-width: 1028px) {
-          #worksec #showcases .project div.description {
-            flex: 1 0 98%;
-            min-height: 280px; } }
-        #worksec #showcases .project div.description div.wrap {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%); }
-          @media only screen and (max-width: 1028px) {
-            #worksec #showcases .project div.description div.wrap {
-              position: relative;
-              top: 0;
-              transform: translateY(0); } }
-          #worksec #showcases .project div.description div.wrap p {
-            font-size: 17px; }
-            @media only screen and (max-width: 1028px) {
-              #worksec #showcases .project div.description div.wrap p {
-                text-align: center;
-                margin: 0 5%; } }
-          #worksec #showcases .project div.description div.wrap span.divide {
-            display: block;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            background-color: #cccccc;
-            width: 99%;
-            height: 2px;
-            margin: 5px 0 15px 0; }
-            @media only screen and (max-width: 1028px) {
-              #worksec #showcases .project div.description div.wrap span.divide {
-                width: 89%; } }
-          #worksec #showcases .project div.description div.wrap .title {
-            font-size: 23px; }
-            @media only screen and (max-width: 1028px) {
-              #worksec #showcases .project div.description div.wrap .title {
-                text-align: center;
-                padding-top: 15px; } }
-          #worksec #showcases .project div.description div.wrap .tags,
-          #worksec #showcases .project div.description div.wrap .apitext {
-            color: #71a9f1;
-            font-family: "Lato", sans-serif; }
-            @media only screen and (max-width: 1028px) {
-              #worksec #showcases .project div.description div.wrap .tags,
-              #worksec #showcases .project div.description div.wrap .apitext {
-                text-align: center; } }
-          #worksec #showcases .project div.description div.wrap .tags {
-            margin-bottom: 20px;
-            font-size: 24px; }
-          #worksec #showcases .project div.description div.wrap .apitext {
-            text-transform: uppercase;
-            font-size: 16px;
-            margin-bottom: 10px; }
-          #worksec #showcases .project div.description div.wrap .viewmore {
-            display: flex;
-            justify-content: space-between;
-            bottom: 5px;
-            width: 50%;
-            max-width: 300px;
-            padding-top: 25px; }
-            @media only screen and (max-width: 1028px) {
-              #worksec #showcases .project div.description div.wrap .viewmore {
-                position: relative;
-                justify-content: space-around;
-                left: 50%;
-                transform: translateX(-50%); } }
-            @media only screen and (max-width: 768px) {
-              #worksec #showcases .project div.description div.wrap .viewmore {
-                margin-top: 15px;
-                position: relative; } }
-            @media only screen and (max-width: 480px) {
-              #worksec #showcases .project div.description div.wrap .viewmore {
-                position: relative;
-                flex-wrap: wrap;
-                padding-top: 15px;
-                width: 70%; } }
-            #worksec #showcases .project div.description div.wrap .viewmore button {
-              margin: 5px;
-              right: 11px;
-              top: 11px;
-              background-color: #2c6ed5;
-              border: none;
-              width: 108px;
-              height: 35px;
-              border-radius: 10px;
-              font-family: "Montserrat", sans-serif;
-              color: #ffffff;
-              font-size: 15px;
-              line-height: 21px;
-              text-align: center; }
-              #worksec #showcases .project div.description div.wrap .viewmore button:last-child {
-                width: 120px; }
+        flex-wrap: wrap;
+        padding-top: 15px;
+        width: 70%; } }
+    div.description div.wrap .viewmore button {
+      margin: 5px;
+      right: 11px;
+      top: 11px;
+      background-color: #2c6ed5;
+      border: none;
+      width: 108px;
+      height: 35px;
+      border-radius: 10px;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 21px;
+      text-align: center; }
+      div.description div.wrap .viewmore button:last-child {
+        width: 120px; }
 
 #skillsec {
   background-color: #d3d3d3;
@@ -549,67 +547,6 @@ footer {
     padding-top: 10px;
     font-size: 12px; }
 
-.inputTabView input[type="radio"], .tabSections > section {
-  display: none; }
-
-.inputTabView input:nth-of-type(1):checked ~ .tabSections section:nth-of-type(1),
-.inputTabView input:nth-of-type(2):checked ~ .tabSections section:nth-of-type(2) {
-  display: block; }
-
-.inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1),
-.inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2) {
-  background-color: teal; }
-
-.tabLabels {
-  border-bottom: 1px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; }
-  .tabLabels label {
-    position: relative;
-    display: inline-block;
-    font-size: 16px;
-    height: 40px;
-    line-height: 40px;
-    min-width: 80px;
-    color: white;
-    border: 1px solid transparent;
-    cursor: pointer;
-    font-weight: bold; }
-    .tabLabels label:active {
-      color: teal; }
-
-.tabSections p {
-  color: white;
-  line-height: 1.5em;
-  font-size: 16px; }
-
-.tabSections section {
-  margin-top: 30px; }
-
-p,
-h1,
-h2,
-h3 {
-  margin: 0; }
-
-li,
-a {
-  text-decoration: none;
-  color: inherit; }
-
-.wrapper {
-  max-width: 1180px;
-  margin: 0 auto;
-  height: 100%;
-  padding-bottom: 10px; }
-
-header {
-  background-image: url("../../public/images/hero.jpeg");
-  background-repeat: repeat-x;
-  background-size: cover;
-  z-index: -1; }
-
 section.sidenav nav {
   width: 100px;
   position: fixed;
@@ -673,13 +610,16 @@ section.sidenav nav {
     @media only screen and (max-width: 789px) {
       section.sidenav nav a.actived {
         border: none; } }
-    section.sidenav nav a.actived p:not(#li-work) {
+    section.sidenav nav a.actived p {
       background-color: rgba(0, 0, 0, 0.9); }
-      section.sidenav nav a.actived p:not(#li-work) span {
+      section.sidenav nav a.actived p span {
         color: #ffffff; }
-    @media only screen and (max-width: 789px) {
-      section.sidenav nav a.actived p {
-        background-color: transparent !important; }
+      @media only screen and (max-width: 1440px) {
+        section.sidenav nav a.actived p {
+          background-color: transparent !important; }
+          section.sidenav nav a.actived p span {
+            color: transparent !important; } }
+      @media only screen and (max-width: 789px) {
         section.sidenav nav a.actived p span {
           color: #2c6ed5 !important; } }
   section.sidenav nav p {
@@ -724,6 +664,109 @@ section.no-touch a.dot:hover p {
     background-color: transparent; }
     section.no-touch a.dot:hover p span {
       color: #2c6ed5; } }
+
+.inputTabView input[type='radio'],
+.tabSections > section {
+  display: none; }
+
+.inputTabView input:nth-of-type(1):checked ~ .tabSections section:nth-of-type(1),
+.inputTabView input:nth-of-type(2):checked ~ .tabSections section:nth-of-type(2) {
+  display: block; }
+
+.inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1),
+.inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2) {
+  background-color: #2c6ed5; }
+
+.tabLabels {
+  margin: 0 10px;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  @media only screen and (max-width: 1028px) {
+    .tabLabels {
+      margin: 0 40px; } }
+  @media only screen and (max-width: 768px) {
+    .tabLabels {
+      margin: 0 20px; } }
+  .tabLabels label {
+    position: relative;
+    display: inline-block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 120px;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bold; }
+
+.tabSections p {
+  color: white;
+  line-height: 1.5em;
+  font-size: 16px; }
+
+.tabSections section {
+  margin-top: 30px; }
+
+.masonryGrid {
+  column-count: 3;
+  column-gap: 30px;
+  transition: all .5s ease-in-out;
+  column-fill: initial; }
+  @media only screen and (max-width: 768px) {
+    .masonryGrid {
+      column-count: 2; } }
+  @media only screen and (max-width: 789px) {
+    .masonryGrid {
+      column-count: 1; } }
+
+.masonryItemCard {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 16px 32px -14px rgba(160, 160, 160, 0.2);
+  overflow: hidden; }
+  .masonryItemCard img {
+    height: auto;
+    max-width: 100%; }
+  .masonryItemCard .cardContent {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, royalblue 1%, teal 100%); }
+  .masonryItemCard .cardTitle {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px; }
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0; }
+
+li,
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 10px; }
+
+header {
+  background-image: url("../../public/images/hero.jpeg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  z-index: -1; }
 
 #main {
   background-color: rgba(0, 0, 0, 0.8);
