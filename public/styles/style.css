@@ -161,6 +161,25 @@ input::-moz-focus-inner {
   box-sizing: border-box;
   list-style-type: none; }
 
+.autoType {
+  overflow: hidden;
+  border-right: 1px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 4s steps(80, end), blink-caret 1s step-end infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: white; } }
+
 #aboutsec {
   background-color: #f5f5f5;
   min-height: 645px;
@@ -737,6 +756,7 @@ section.no-touch a.dot:hover p {
         #main div.intro h1 {
           font-size: 22px; } }
     #main div.intro p {
+      max-width: max-content;
       margin-top: 40px;
       font-family: "Lato", sans-serif;
       color: #e6e6e6;

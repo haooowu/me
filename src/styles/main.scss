@@ -1,6 +1,8 @@
 @import 'setup';
 @import 'mixins';
 @import 'variables';
+@import 'autoType';
+
 @import '_about';
 @import '_contact';
 @import '_work';
@@ -242,6 +244,7 @@ section.no-touch {
       }
     }
     p {
+      max-width: max-content;
       margin-top: 40px;
       font-family: $lato;
       color: #e6e6e6;
