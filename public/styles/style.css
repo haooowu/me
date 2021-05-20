@@ -696,6 +696,8 @@ section.no-touch a.dot:hover p {
   @media only screen and (max-width: 768px) {
     .tabLabels {
       margin: 0 20px; } }
+  .tabLabels span {
+    margin-left: 1em; }
   .tabLabels label {
     position: relative;
     display: inline-block;
