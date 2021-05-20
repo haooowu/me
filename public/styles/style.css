@@ -665,6 +665,9 @@ section.no-touch a.dot:hover p {
     section.no-touch a.dot:hover p span {
       color: #2c6ed5; } }
 
+.inputTabView {
+  margin-top: 40px; }
+
 .inputTabView input[type='radio'],
 .tabSections > section {
   display: none; }
@@ -697,7 +700,7 @@ section.no-touch a.dot:hover p {
     font-size: 16px;
     height: 40px;
     line-height: 40px;
-    min-width: 120px;
+    min-width: 50%;
     color: white;
     border: 1px solid transparent;
     cursor: pointer;
@@ -714,7 +717,7 @@ section.no-touch a.dot:hover p {
 .masonryGrid {
   column-count: 3;
   column-gap: 30px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   column-fill: initial; }
   @media only screen and (max-width: 768px) {
     .masonryGrid {
