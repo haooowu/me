@@ -4,10 +4,6 @@
       @content;
     }
   } @else if $breakpoint == 'medium' {
-    @media only screen and (max-width: 768px) {
-      @content;
-    }
-  } @else if $breakpoint == 'spacing' {
     @media only screen and (max-width: 789px) {
       @content;
     }

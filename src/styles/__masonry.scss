@@ -3,10 +3,10 @@
   column-gap: 30px;
   transition: all 0.5s ease-in-out;
   column-fill: initial;
-  @include respond_to(medium) {
+  @include respond_to(large) {
     column-count: 2;
   }
-  @include respond_to(spacing) {
+  @include respond_to(medium) {
     column-count: 1;
   }
 }

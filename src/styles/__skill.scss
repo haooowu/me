@@ -9,7 +9,7 @@
     font-size: 40px;
     font-weight: 400;
     text-align: center;
-    @include respond_to(spacing) {
+    @include respond_to(medium) {
       font-size: 35px;
       padding-top: 62px;
     }
@@ -46,11 +46,12 @@
       }
     }
     img,
+    .alt-logo,
     i {
       font-size: 80px;
       height: 80px;
       max-width: 120px;
-      color: #1963ca;
+      color: var(--primary-color);
     }
     p {
       font-family: $poppin;
@@ -61,10 +62,21 @@
   }
 }
 
-.firebase_icon {
-  width: 24px;
-  height: 24px;
-  transform: translateY(1px);
+.alt-logo {
+  background-color: var(--primary-color);
+  mask-size: contain;
+  margin: auto;
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  &.apollo {
+    mask-image: url('../../public/images/apollo-icon.svg');
+  }
+  &.a11y {
+    mask-image: url('../../public/images/accessibility-icon.svg');
+  }
+  &.pwa {
+    mask-image: url('../../public/images/pwalogo.svg');
+  }
 }
 
 footer {

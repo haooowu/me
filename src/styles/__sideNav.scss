@@ -7,7 +7,7 @@ section.sidenav {
     transform: translate(0, -50%);
     z-index: 9;
     text-align: right;
-    @include respond_to(spacing) {
+    @include respond_to(medium) {
       width: 100%;
       height: 50px;
       margin: 0 auto;
@@ -21,14 +21,14 @@ section.sidenav {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      @include respond_to(spacing) {
+      @include respond_to(medium) {
         line-height: 50px;
         display: flex;
         justify-content: space-around;
       }
       li {
         height: 29px;
-        @include respond_to(spacing) {
+        @include respond_to(medium) {
           //for safari
           height: auto;
           width: auto;
@@ -46,7 +46,7 @@ section.sidenav {
       box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
       width: 10px;
       height: 10px;
-      @include respond_to(spacing) {
+      @include respond_to(medium) {
         color: transparent;
         width: auto;
         border-radius: 0;
@@ -63,8 +63,8 @@ section.sidenav {
       }
     }
     a.actived {
-      border: 2px solid #2c6ed5;
-      @include respond_to(spacing) {
+      border: 2px solid var(--primary-color);
+      @include respond_to(medium) {
         border: none;
       }
       p {
@@ -78,9 +78,9 @@ section.sidenav {
             color: transparent !important;
           }
         }
-        @include respond_to(spacing) {
+        @include respond_to(medium) {
           span {
-            color: #2c6ed5 !important;
+            color: var(--primary-color) !important;
           }
         }
       }
@@ -95,7 +95,7 @@ section.sidenav {
       top: -10px;
       z-index: 9;
       text-align: right;
-      @include respond_to(spacing) {
+      @include respond_to(medium) {
         position: initial;
         float: none;
         width: auto;
@@ -109,7 +109,7 @@ section.sidenav {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -55%);
-        @include respond_to(spacing) {
+        @include respond_to(medium) {
           font-size: 14px;
           font-weight: bold;
           position: relative;
@@ -129,11 +129,11 @@ section.no-touch {
         color: #ffffff;
       }
     }
-    @include respond_to(spacing) {
+    @include respond_to(medium) {
       p {
         background-color: transparent;
         span {
-          color: #2c6ed5;
+          color: var(--primary-color);
         }
       }
     }

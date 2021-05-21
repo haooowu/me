@@ -1,3 +1,6 @@
+:root {
+  --primary-color: #2c6ed5; }
+
 article,
 aside,
 details,
@@ -163,7 +166,7 @@ input::-moz-focus-inner {
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 3s steps(80, end), blink-caret 1s step-end infinite; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 789px) {
     .autoType {
       animation: typing 1s steps(60, end), blink-caret 1s step-end infinite; } }
 
@@ -241,7 +244,7 @@ input::-moz-focus-inner {
   #aboutsec button {
     margin-top: 60px;
     margin-bottom: 20px;
-    background-color: #2c6ed5;
+    background-color: var(--primary-color);
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
     width: 185px;
     height: 50px;
@@ -319,7 +322,7 @@ input::-moz-focus-inner {
     #contactsec form button {
       margin-top: 40px;
       margin-bottom: 20px;
-      background-color: #2c6ed5;
+      background-color: var(--primary-color);
       box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
       width: 115px;
       height: 50px;
@@ -368,19 +371,34 @@ input::-moz-focus-inner {
       align-items: center;
       width: 100%;
       flex-wrap: wrap; }
-      #worksec #showcases .project div.imgholder {
-        flex: 1 0 45%;
-        overflow: hidden; }
+      #worksec #showcases .project div.frameholder {
+        position: relative;
+        display: inline-block;
+        flex-basis: 43%;
+        margin-right: 2%;
+        padding: 16px 12px 14px 12px;
+        border: 8px solid grey;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%; }
         @media only screen and (max-width: 1028px) {
-          #worksec #showcases .project div.imgholder {
+          #worksec #showcases .project div.frameholder {
+            flex-basis: 100%;
             margin: 0 15%; } }
+      #worksec #showcases .project div.imgholder {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
         #worksec #showcases .project div.imgholder img {
+          transform: translateY(-2px);
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          border-radius: 10px; }
 
 div.description {
   position: relative;
-  flex: 1 0 55%;
+  flex: 1;
+  flex-basis: 55%;
   padding-bottom: 10px;
   padding-left: 10px;
   text-align: left;
@@ -425,7 +443,6 @@ div.description {
         padding-top: 15px; } }
   div.description div.wrap .tags,
   div.description div.wrap .apitext {
-    color: #71a9f1;
     font-family: "Lato", sans-serif; }
     @media only screen and (max-width: 1028px) {
       div.description div.wrap .tags,
@@ -435,6 +452,8 @@ div.description {
     margin-bottom: 20px;
     font-size: 24px; }
   div.description div.wrap .apitext {
+    color: var(--primary-color);
+    filter: brightness(2);
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 10px; }
@@ -451,7 +470,7 @@ div.description {
         justify-content: space-around;
         left: 50%;
         transform: translateX(-50%); } }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 789px) {
       div.description div.wrap .viewmore {
         margin-top: 15px;
         position: relative; } }
@@ -465,7 +484,7 @@ div.description {
       margin: 5px;
       right: 11px;
       top: 11px;
-      background-color: #2c6ed5;
+      background-color: var(--primary-color);
       border: none;
       width: 108px;
       height: 35px;
@@ -519,25 +538,40 @@ div.description {
     #skillsec .skilllist li {
       flex: 1 0 24.9%;
       text-align: center; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 789px) {
         #skillsec .skilllist li {
           flex: 1 0 49.9%; } }
     #skillsec .skilllist img,
+    #skillsec .skilllist .alt-logo,
     #skillsec .skilllist i {
       font-size: 80px;
       height: 80px;
       max-width: 120px;
-      color: #1963ca; }
+      color: var(--primary-color); }
     #skillsec .skilllist p {
       font-family: "Poppins", sans-serif;
       color: black;
       margin-top: 5px;
       margin-bottom: 25px; }
 
-.firebase_icon {
-  width: 24px;
-  height: 24px;
-  transform: translateY(1px); }
+.alt-logo {
+  background-color: var(--primary-color);
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  margin: auto;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: 50% 50%;
+          mask-position: 50% 50%; }
+  .alt-logo.apollo {
+    -webkit-mask-image: url("../../public/images/apollo-icon.svg");
+            mask-image: url("../../public/images/apollo-icon.svg"); }
+  .alt-logo.a11y {
+    -webkit-mask-image: url("../../public/images/accessibility-icon.svg");
+            mask-image: url("../../public/images/accessibility-icon.svg"); }
+  .alt-logo.pwa {
+    -webkit-mask-image: url("../../public/images/pwalogo.svg");
+            mask-image: url("../../public/images/pwalogo.svg"); }
 
 footer {
   text-align: center; }
@@ -610,7 +644,7 @@ section.sidenav nav {
         section.sidenav nav a.dot p {
           color: white; } }
   section.sidenav nav a.actived {
-    border: 2px solid #2c6ed5; }
+    border: 2px solid var(--primary-color); }
     @media only screen and (max-width: 789px) {
       section.sidenav nav a.actived {
         border: none; } }
@@ -625,7 +659,7 @@ section.sidenav nav {
             color: transparent !important; } }
       @media only screen and (max-width: 789px) {
         section.sidenav nav a.actived p span {
-          color: #2c6ed5 !important; } }
+          color: var(--primary-color) !important; } }
   section.sidenav nav p {
     position: relative;
     float: right;
@@ -667,7 +701,7 @@ section.no-touch a.dot:hover p {
   section.no-touch a.dot:hover p {
     background-color: transparent; }
     section.no-touch a.dot:hover p span {
-      color: #2c6ed5; } }
+      color: var(--primary-color); } }
 
 .inputTabView {
   margin-top: 40px; }
@@ -682,10 +716,7 @@ section.no-touch a.dot:hover p {
 
 .inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1),
 .inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2) {
-  background-color: #2c6ed5; }
-  .inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1):hover,
-  .inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2):hover {
-    background-color: #2258ac; }
+  background-color: var(--primary-color); }
 
 .tabLabels {
   margin: 0 10px;
@@ -695,11 +726,14 @@ section.no-touch a.dot:hover p {
   @media only screen and (max-width: 1028px) {
     .tabLabels {
       margin: 0 40px; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 789px) {
     .tabLabels {
       margin: 0 20px; } }
   .tabLabels span {
     margin-left: 1em; }
+    @media only screen and (max-width: 789px) {
+      .tabLabels span {
+        margin-left: 0.5em; } }
   .tabLabels label {
     font-weight: bold;
     background-color: #485461;
@@ -713,11 +747,12 @@ section.no-touch a.dot:hover p {
     border: 1px solid grey;
     border-right-width: 0;
     cursor: pointer;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out; }
+    font-weight: bold; }
     .tabLabels label:first-of-type {
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px; }
+      .tabLabels label:first-of-type:hover {
+        padding-left: 1px; }
     .tabLabels label:last-child {
       border-right-width: 1px;
       border-top-right-radius: 10px;
@@ -725,8 +760,18 @@ section.no-touch a.dot:hover p {
     .tabLabels label:hover {
       border-color: whitesmoke;
       border-right-width: 1px;
-      background-color: #46515e;
       box-shadow: 1px 3px 9px rgba(99, 99, 99, 0.5); }
+    .tabLabels label:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease-in;
+      background: transparent; }
+    .tabLabels label:hover:before, .tabLabels label:focus:before, .tabLabels label:active:before {
+      background: rgba(0, 0, 0, 0.18); }
 
 .tabSections p {
   color: white;
@@ -741,7 +786,7 @@ section.no-touch a.dot:hover p {
   column-gap: 30px;
   transition: all 0.5s ease-in-out;
   column-fill: initial; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1028px) {
     .masonryGrid {
       column-count: 2; } }
   @media only screen and (max-width: 789px) {
@@ -804,7 +849,7 @@ header {
     right: 18px;
     top: 18px;
     position: absolute;
-    background-color: #2c6ed5;
+    background-color: var(--primary-color);
     border: none;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
     width: 148px;

@@ -10,7 +10,7 @@
     font-size: 40px;
     font-family: Poppins;
     color: #ffffff;
-    @include respond_to(spacing) {
+    @include respond_to(medium) {
       font-size: 35px;
       padding-top: 62px;
     }
@@ -39,15 +39,30 @@
       align-items: center;
       width: 100%;
       flex-wrap: wrap;
-      div.imgholder {
-        flex: 1 0 45%;
-        overflow: hidden;
+      div.padholder {
+        position: relative;
+        display: inline-block;
+        flex-basis: 43%;
+        margin-right: 2%;
+        padding: 16px 12px 14px 12px;
+        border: 8px solid grey;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
         @include respond_to(large) {
+          flex-basis: 100%;
           margin: 0 15%;
         }
+      }
+      div.imgholder {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
         img {
+          transform: translateY(-2px);
           width: 100%;
           height: 100%;
+          border-radius: 10px;
         }
       }
     }
@@ -56,7 +71,8 @@
 
 div.description {
   position: relative;
-  flex: 1 0 55%;
+  flex: 1;
+  flex-basis: 55%;
   padding-bottom: 10px;
   padding-left: 10px;
   text-align: left;
@@ -106,7 +122,6 @@ div.description {
     }
     .tags,
     .apitext {
-      color: #71a9f1;
       font-family: $lato;
       @include respond_to(large) {
         text-align: center;
@@ -117,6 +132,8 @@ div.description {
       font-size: 24px;
     }
     .apitext {
+      color: var(--primary-color);
+      filter: brightness(2);
       text-transform: uppercase;
       font-size: 16px;
       margin-bottom: 10px;
@@ -148,7 +165,7 @@ div.description {
         margin: 5px;
         right: 11px;
         top: 11px;
-        background-color: #2c6ed5;
+        background-color: var(--primary-color);
         border: none;
         width: 108px;
         height: 35px;
