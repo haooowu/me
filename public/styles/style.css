@@ -719,6 +719,10 @@ section.no-touch a.dot:hover p {
 .inputTabView {
   margin-top: 40px; }
 
+@media only screen and (max-width: 789px) {
+  .tabSections {
+    margin: 0 20px; } }
+
 .inputTabView input[type='radio'],
 .tabSections > section {
   display: none; }
