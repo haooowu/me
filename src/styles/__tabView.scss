@@ -2,6 +2,12 @@
   margin-top: 40px;
 }
 
+.tabSections {
+  @include respond_to(medium) {
+    margin: 0 20px;
+  }
+}
+
 .inputTabView input[type='radio'],
 .tabSections > section {
   display: none;
