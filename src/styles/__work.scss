@@ -42,8 +42,8 @@
       div.padholder {
         position: relative;
         display: inline-block;
-        flex-basis: 43%;
-        margin-right: 2%;
+        flex-basis: 42%;
+        margin-right: 3%;
         padding: 16px 12px 14px 12px;
         border: 4px solid grey;
         border-radius: 30px;
@@ -74,7 +74,6 @@ div.description {
   flex: 1;
   flex-basis: 55%;
   padding-bottom: 10px;
-  padding-left: 10px;
   text-align: left;
   height: 100%;
   @include respond_to(large) {

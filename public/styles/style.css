@@ -374,8 +374,8 @@ input::-moz-focus-inner {
       #worksec #showcases .project div.padholder {
         position: relative;
         display: inline-block;
-        flex-basis: 43%;
-        margin-right: 2%;
+        flex-basis: 42%;
+        margin-right: 3%;
         padding: 16px 12px 14px 12px;
         border: 4px solid grey;
         border-radius: 30px;
@@ -400,7 +400,6 @@ div.description {
   flex: 1;
   flex-basis: 55%;
   padding-bottom: 10px;
-  padding-left: 10px;
   text-align: left;
   height: 100%; }
   @media only screen and (max-width: 1028px) {
@@ -785,13 +784,16 @@ section.no-touch a.dot:hover p {
   column-count: 3;
   column-gap: 30px;
   transition: all 0.5s ease-in-out;
-  column-fill: initial; }
+  column-fill: initial;
+  margin: 0 20px; }
   @media only screen and (max-width: 1028px) {
     .masonryGrid {
-      column-count: 2; } }
+      column-count: 2;
+      column-gap: 24px; } }
   @media only screen and (max-width: 789px) {
     .masonryGrid {
-      column-count: 1; } }
+      column-count: 1;
+      column-gap: 16px; } }
 
 .masonryItemCard {
   display: inline-block;
