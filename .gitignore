@@ -3,6 +3,9 @@ src
 package.json
 package-lock.json
 gulpfile.js
+tsconfig.json
+.prettierignore
+.prettierrc
 /.husky
 /.vscode
 .DS_Store
