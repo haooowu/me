@@ -73,14 +73,14 @@ section.sidenav {
           color: #ffffff;
         }
         @include respond_to(xlarge) {
-          background-color: transparent !important;
+          background-color: transparent;
           span {
-            color: transparent !important;
+            color: transparent;
           }
         }
         @include respond_to(medium) {
           span {
-            color: var(--primary-color) !important;
+            color: var(--primary-color);
           }
         }
       }
