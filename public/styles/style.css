@@ -683,10 +683,12 @@ section.no-touch a.dot:hover p {
 .inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1),
 .inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2) {
   background-color: #2c6ed5; }
+  .inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1):hover,
+  .inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2):hover {
+    background-color: #2258ac; }
 
 .tabLabels {
   margin: 0 10px;
-  border-bottom: 1px solid #cccccc;
   display: flex;
   align-items: center;
   justify-content: flex-start; }
@@ -699,18 +701,32 @@ section.no-touch a.dot:hover p {
   .tabLabels span {
     margin-left: 1em; }
   .tabLabels label {
+    font-weight: bold;
+    background-color: #485461;
     position: relative;
     display: inline-block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     font-size: 16px;
-    height: 40px;
-    line-height: 40px;
+    height: 44px;
+    line-height: 44px;
     min-width: 50%;
     color: white;
-    border: 1px solid transparent;
+    border: 1px solid grey;
+    border-right-width: 0;
     cursor: pointer;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: all 0.2s ease-in-out; }
+    .tabLabels label:first-of-type {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px; }
+    .tabLabels label:last-child {
+      border-right-width: 1px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+    .tabLabels label:hover {
+      border-color: whitesmoke;
+      border-right-width: 1px;
+      background-color: #46515e;
+      box-shadow: 1px 3px 9px rgba(99, 99, 99, 0.5); }
 
 .tabSections p {
   color: white;

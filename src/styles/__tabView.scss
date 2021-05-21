@@ -15,11 +15,13 @@
 .inputTabView input:nth-of-type(1):checked ~ .tabLabels label:nth-of-type(1),
 .inputTabView input:nth-of-type(2):checked ~ .tabLabels label:nth-of-type(2) {
   background-color: #2c6ed5;
+  &:hover {
+    background-color: darken(#2c6ed5, 10%);
+  }
 }
 
 .tabLabels {
   margin: 0 10px;
-  border-bottom: 1px solid #cccccc;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -33,18 +35,35 @@
     margin-left: 1em;
   }
   label {
+    font-weight: bold;
+    background-color: #485461;
     position: relative;
     display: inline-block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     font-size: 16px;
-    height: 40px;
-    line-height: 40px;
+    height: 44px;
+    line-height: 44px;
     min-width: 50%;
     color: white;
-    border: 1px solid transparent;
+    border: 1px solid grey;
+    border-right-width: 0;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    &:first-of-type {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    &:last-child {
+      border-right-width: 1px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    &:hover {
+      border-color: whitesmoke;
+      border-right-width: 1px;
+      background-color: darken(#485461, 1%);
+      box-shadow: 1px 3px 9px rgba(99, 99, 99, 0.5);
+    }
   }
 }
 
