@@ -371,18 +371,18 @@ input::-moz-focus-inner {
       align-items: center;
       width: 100%;
       flex-wrap: wrap; }
-      #worksec #showcases .project div.frameholder {
+      #worksec #showcases .project div.padholder {
         position: relative;
         display: inline-block;
         flex-basis: 43%;
         margin-right: 2%;
         padding: 16px 12px 14px 12px;
-        border: 8px solid grey;
+        border: 4px solid grey;
         border-radius: 30px;
         width: 100%;
         height: 100%; }
         @media only screen and (max-width: 1028px) {
-          #worksec #showcases .project div.frameholder {
+          #worksec #showcases .project div.padholder {
             flex-basis: 100%;
             margin: 0 15%; } }
       #worksec #showcases .project div.imgholder {
@@ -798,7 +798,7 @@ section.no-touch a.dot:hover p {
   vertical-align: top;
   width: 100%;
   margin-bottom: 30px;
-  border-radius: 20px;
+  border-radius: 16px;
   box-shadow: 0 16px 32px -14px rgba(160, 160, 160, 0.2);
   overflow: hidden; }
   .masonryItemCard img {
