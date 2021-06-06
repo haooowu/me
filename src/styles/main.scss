@@ -3,7 +3,6 @@
 @import 'setup';
 @import 'mixins';
 @import 'variables';
-@import 'autoType';
 
 @import '_about';
 @import '_contact';
@@ -12,6 +11,7 @@
 @import '_sideNav';
 @import '_tabView';
 @import '_masonry';
+@import '_autoType';
 
 p,
 h1,
