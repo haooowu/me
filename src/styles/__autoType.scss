@@ -3,12 +3,21 @@
   border-right: 1px solid white;
   white-space: nowrap;
   margin: 0 auto;
+  width: 0;
+  @include respond_to(medium) {
+    line-height: 24px;
+  }
 }
 
 .autoType {
-  animation: typing 2s steps(80, end), blink-caret 1s step-end infinite;
+  animation-name: typing, blink-caret;
+  animation-duration: 2s, 1s;
+  animation-timing-function: steps(80), step-end;
+  animation-delay: 1s, 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1, infinite;
   @include respond_to(medium) {
-    animation: typing 1s steps(60, end), blink-caret 1s step-end infinite;
+    animation-timing-function: steps(30), step-end;
   }
 }
 

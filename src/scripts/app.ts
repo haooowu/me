@@ -39,7 +39,9 @@ const app = new Vue({
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
-    document.getElementById('titleText').classList.add('autoType');
+    this.$nextTick(() => {
+      document.getElementById('titleText').classList.add('autoType');
+    });
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll);
