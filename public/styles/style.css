@@ -828,7 +828,7 @@ section.no-touch a.dot:hover p {
   animation-name: typing, blink-caret;
   animation-duration: 2s, 1s;
   animation-timing-function: steps(80), step-end;
-  animation-delay: 1s, 0s;
+  animation-delay: .6s, 0s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1, infinite; }
   @media only screen and (max-width: 789px) {
