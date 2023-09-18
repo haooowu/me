@@ -1,0 +1,201 @@
+#worksec {
+  overflow: hidden; //ghost space
+  font-size: 0;
+  background-color: #242424;
+  text-align: center;
+  padding-top: 30px;
+  h1 {
+    padding-top: 72px;
+    font-family: $poppin;
+    font-size: 40px;
+    font-family: Poppins;
+    color: #ffffff;
+    @include respond_to(medium) {
+      font-size: 35px;
+      padding-top: 62px;
+    }
+    @include respond_to(small) {
+      font-size: 30px;
+      padding-top: 42px;
+    }
+  }
+  .dash {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #cccccc;
+    width: 50px;
+    height: 2px;
+    margin: 25px 0 25px 0;
+  }
+
+  #showcases {
+    margin: 0 1%;
+    margin-bottom: 75px;
+    .project {
+      margin-top: 95px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      div.padholder {
+        position: relative;
+        display: inline-block;
+        background-color: #202020;
+        flex-basis: 42%;
+        margin-right: 3%;
+        padding: 16px 12px 14px 12px;
+        border: 4px solid grey;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        @include respond_to(large) {
+          flex-basis: 100%;
+          margin: 0 15%;
+        }
+      }
+      div.imgholder {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          transform: translateY(-2px);
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+      }
+    }
+    p.title {
+      display: flex;
+      justify-content: space-between;
+      @include respond_to(large) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+div.description {
+  position: relative;
+  flex: 1;
+  flex-basis: 55%;
+  padding-bottom: 10px;
+  text-align: left;
+  height: 100%;
+  @include respond_to(large) {
+    flex: 1 0 98%;
+    min-height: 280px;
+  }
+  p {
+    font-size: 13px;
+    font-family: $poppin;
+    color: #ffffff;
+  }
+  div.wrap {
+    @include respond_to(large) {
+      position: relative;
+      top: 0;
+      transform: translateY(0);
+    }
+    p {
+      font-size: 17px;
+      @include respond_to(large) {
+        text-align: center;
+        margin: 0 5%;
+      }
+    }
+    span.divide {
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      background-color: #cccccc;
+      width: 99%;
+      height: 2px;
+      margin: 5px 0 15px 0;
+      @include respond_to(large) {
+        width: 89%;
+      }
+    }
+    .title {
+      font-size: 23px;
+      span {
+        font-size: 16px;
+        margin-right: 10px;
+        i {
+          margin-left: 2px;
+          font-size: 16px;
+          margin-right: 4px;
+        }
+      }
+      @include respond_to(large) {
+        text-align: center;
+        padding-top: 15px;
+      }
+    }
+    .tags,
+    .apitext {
+      font-family: $lato;
+      @include respond_to(large) {
+        text-align: center;
+      }
+    }
+    .tags {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    .apitext {
+      color: var(--primary-color);
+      filter: brightness(2);
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .viewmore {
+      display: flex;
+      justify-content: space-between;
+      bottom: 5px;
+      width: 50%;
+      max-width: 300px;
+      padding-top: 25px;
+      @include respond_to(large) {
+        position: relative;
+        justify-content: space-around;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include respond_to(medium) {
+        margin-top: 15px;
+        position: relative;
+      }
+      @include respond_to(small) {
+        position: relative;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        width: 70%;
+      }
+      button {
+        margin: 5px;
+        right: 11px;
+        top: 11px;
+        background-color: var(--primary-color);
+        border: none;
+        width: 108px;
+        height: 35px;
+        border-radius: 10px;
+        font-family: $mont;
+        color: #ffffff;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        &:last-child {
+          width: 120px;
+        }
+      }
+    }
+  }
+}

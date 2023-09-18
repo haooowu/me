@@ -1,0 +1,96 @@
+#skillsec {
+  background-color: #d3d3d3;
+  min-height: 925px;
+  padding-top: 30px;
+  h1 {
+    padding-top: 82px;
+    font-family: $poppin;
+    color: black;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    @include respond_to(medium) {
+      font-size: 35px;
+      padding-top: 62px;
+    }
+    @include respond_to(small) {
+      font-size: 30px;
+      padding-top: 42px;
+    }
+  }
+  .dash {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: black;
+    width: 50px;
+    z-index: 9;
+    height: 2px;
+    margin: 25px 0 75px 0;
+  }
+  .skilllist {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    li {
+      flex: 1 0 24.9%;
+      text-align: center;
+      @include respond_to(medium) {
+        flex: 1 0 49.9%;
+      }
+    }
+    img,
+    .alt-logo,
+    i {
+      font-size: 80px;
+      height: 80px;
+      max-width: 120px;
+      color: var(--primary-color);
+    }
+    p {
+      font-family: $poppin;
+      color: black;
+      margin-top: 5px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.alt-logo {
+  background-color: var(--primary-color);
+  mask-size: contain;
+  margin: auto;
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  &.apollo {
+    mask-image: url('../images/apollo-icon.svg');
+  }
+  &.a11y {
+    mask-image: url('../images/accessibility-icon.svg');
+  }
+  &.pwa {
+    mask-image: url('../images/pwalogo.svg');
+  }
+}
+
+footer {
+  text-align: center;
+  div {
+    padding-top: 25px;
+  }
+  i,
+  p {
+    font-family: $mont;
+    color: #ffffff;
+  }
+  p {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+}
