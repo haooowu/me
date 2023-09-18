@@ -1,11 +1,8 @@
-node_modules
-src
-package.json
-package-lock.json
-gulpfile.js
-tsconfig.json
-.prettierignore
-.prettierrc
-/.husky
-/.vscode
-.DS_Store
+# Ignore everything
+*
+
+# Except
+!.gitignore
+/dist
+index.html
+README.md
