@@ -3,6 +3,6 @@
 
 # Except
 !.gitignore
-/dist
-index.html
-README.md
+!/dist
+!index.html
+!README.md
