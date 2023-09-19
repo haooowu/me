@@ -474,46 +474,47 @@
   </section>
 `,h=`
   <div class="wrapper">
-  <p>Email: haooo.wu@gmail.com</p>
-  <div class="contactlist">
-    <a href="https://twitter.com/HaoooWu"
-      ><span class="fa-stack fa">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span
-    ></a>
-    <a href="https://www.linkedin.com/in/hao-wu-b70b845b/"
-      ><span class="fa-stack fa">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span
-    ></a>
-    <a href="https://github.com/haooowu">
+    <p>Email: haooo.wu@gmail.com</p>
+    <div class="contactlist">
+      <a href="https://twitter.com/HaoooWu">
+        <span class="fa-stack fa">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> 
+        </span>
+      </a>
+      <a href="https://www.linkedin.com/in/hao-wu-b70b845b/">
+        <span class="fa-stack fa">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      <a href="https://github.com/haooowu">
         <span class="fa-stack fa">
           <i class="fa fa-circle-thin fa-stack-2x"></i>
           <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i> 
         </span>
       </a>
-    <a href="mailto:haooo.wu@gmail.com"
-      ><span class="fa-stack fa">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> </span
-    ></a>
-  </div>
-  <p>© Hao Wu 2023</p>
+      <a href="mailto:haooo.wu@gmail.com">
+        <span class="fa-stack fa">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </div>
+    <p>© Hao Wu 2023</p>
   </div>
 `;document.querySelector("#app").innerHTML=`
-  <div id="app">
-    <header>
-      ${n}
-      ${r}
-    </header>
-    <main>
-      ${d}
-      ${p}
-      ${v}
-      ${u}
-    </main>
-    <footer>
-      ${h}
-    </footer>
-  </div>
+  <header>
+    ${n}
+    ${r}
+  </header>
+  <main>
+    ${d}
+    ${p}
+    ${v}
+    ${u}
+  </main>
+  <footer>
+    ${h}
+  </footer>
 `;function f(a,e){let t=!1;return function(){t||(a.apply(this,arguments),t=!0,setTimeout(()=>{t=!1},e))}}function o(a){if(!a)return!1;const e=a.getBoundingClientRect();if(a===document.getElementById("contactsec")){const t=document.documentElement.scrollTop+window.innerHeight,l=document.documentElement.offsetHeight-140;return t>=l?!0:e.bottom<955}return e.top<=-10&&e.bottom>0||e.top<=0&&e.bottom>0}function m(){this.navFlag.main=o(document.getElementById("main")),this.navFlag.about=o(document.getElementById("aboutsec")),this.navFlag.skill=o(document.getElementById("skillsec")),this.navFlag.work=o(document.getElementById("worksec")),this.navFlag.contact=o(document.getElementById("contactsec")),this.navFlag.contact&&(this.navFlag.work=!1)}new Vue({el:"#app",data:()=>({navFlag:{main:!0,about:!1,skill:!1,work:!1,contact:!1}}),created(){var a;"ontouchstart"in window||navigator.maxTouchPoints||(a=document.getElementById("sidenav"))==null||a.classList.add("no-touch")},mounted(){window.addEventListener("scroll",this.handleScroll),this.$nextTick(()=>{var a;(a=document.getElementById("titleText"))==null||a.classList.add("autoType")})},beforeDestroy(){window.removeEventListener("scroll",this.handleScroll)},methods:{handleScroll:f(m,30)}});
