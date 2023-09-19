@@ -10,12 +10,16 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Hao Wu",
   "license": "ISC",
+  "homepage": "https://haooowu.github.io/me/",
   "devDependencies": {
     "eslint": "^8.49.0",
+    "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
