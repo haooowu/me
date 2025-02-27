@@ -42,12 +42,6 @@
         <h1>Hello, My name is Hao Wu</h1>
         <p id="titleText">Front-End Developer</p>
         <div class="contactlist">
-          <a href="https://twitter.com/HaoooWu">
-            <span class="fa-stack fa">
-              <i class="fa fa-circle-thin fa-stack-2x"></i>
-              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> 
-            </span >
-          </a>
           <a href="https://www.linkedin.com/in/hao-wu-b70b845b/">
             <span class="fa-stack fa">
               <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -476,12 +470,6 @@
   <div class="wrapper">
     <p>Email: haooo.wu@gmail.com</p>
     <div class="contactlist">
-      <a href="https://twitter.com/HaoooWu">
-        <span class="fa-stack fa">
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> 
-        </span>
-      </a>
       <a href="https://www.linkedin.com/in/hao-wu-b70b845b/">
         <span class="fa-stack fa">
           <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -501,7 +489,7 @@
         </span>
       </a>
     </div>
-    <p>© Hao Wu 2023</p>
+    <p>© Hao Wu 2025</p>
   </div>
 `;document.querySelector("#app").innerHTML=`
   <header>
